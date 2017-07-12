@@ -1,0 +1,96 @@
+.left-section {
+    background: $color-blue-2;
+    color: $color-white-0;
+
+    .profile-badge {
+        position: relative;
+        padding: 0 0 10px;
+        border-bottom: 1px solid $color-grey-1;
+
+        .cover-image {
+            width: 100%;
+            height: 100px;
+        }
+
+        .profile-image {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            position: absolute;
+            top: 60px;
+            left: 0;
+            right: 0;
+            margin: auto;
+            border: 5px solid $color-blue-2;
+        }
+
+        .name {
+            font-size: 1.1rem;
+            margin: 60px 0 10px;
+            text-align: center;
+            color: $color-white-0;
+        }
+
+        .title {
+            font-size: 1rem;
+            margin: 0 0 10px;
+            text-align: center;
+            font-weight: 400;
+            color: $color-white-0;
+        }
+    }
+
+    .contact-info {
+        padding: 10px;
+        border-bottom: 1px solid $color-grey-1;
+
+        .list {
+            li {
+                padding: 5px;
+                font-size: 0.875em;
+
+                a {
+                    color: $color-white-0;
+                }
+            }
+        }
+    }
+
+    .personal-info {
+        padding: 10px;
+        border-bottom: 1px solid $color-grey-1;
+
+        .list {
+            li {
+                padding: 5px;
+                font-size: 0.875em;
+                overflow: hidden;
+                label {
+                    width:115px;
+                    i {
+                        font-style: normal;
+                    }
+                }
+
+                span {
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
+    .interests-info{
+        padding: 10px;
+        .section-header{
+            font-size: 1rem;
+            margin: 4px 4px 8px;
+            color: $color-white-0;
+        }
+        .list {
+            li {
+                padding: 5px;
+                font-size: 0.875em;
+                overflow: hidden;
+            }
+        }
+    }
+}

@@ -1,0 +1,200 @@
+.section-projects {
+    .section-content{
+        padding:0 !important;
+        .project-detail{
+            &.jtacwb{
+                .summary{
+                    background: $color-primary-1;
+                }
+            }
+            &.r7-lol{
+                .summary{
+                    background: $color-primary-2;
+                }
+            }
+            &.fox-sports{
+                .summary{
+                    background: $color-primary-1;
+                }
+            }
+            &.ram-cnbc{
+                .summary{
+                    background: $color-primary-2;
+                }
+            }
+            &.adx-nyt{
+                .summary{
+                    background: $color-primary-1;
+                }
+            }
+            &.dealer-net{
+                .summary{
+                    background: $color-primary-2;
+                }
+            }
+            &.clb2c-mortgage{
+                .summary{
+                    background: $color-primary-1;
+                }
+            }
+            &.ampt-nyt{
+                .summary{
+                    background: $color-primary-2;
+                }
+            }
+            &.trelleborg{
+                .summary{
+                    background: $color-primary-1;
+                }
+            }
+            &.twms-mobile{
+                .summary{
+                    background: $color-primary-2;
+                }
+            }
+            &.mb2c-mortgage{
+                .summary{
+                    background: $color-primary-1;
+                }
+            }
+            &.success-trade{
+                .summary{
+                    background: $color-primary-2;
+                }
+            }
+        }
+    }
+    .project-detail{
+        display: flex;
+        a{
+            color: #fff;
+        }
+        .summary{
+            flex:2;
+            padding:15px;
+            color:#fff;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            span{
+                margin: 4px 0;
+            }
+        }
+        .description{
+            padding:15px;
+            flex:9;
+            border-bottom: 1px solid $color-grey-2;
+        }
+    }
+}
+.section-experience-education {
+    .org-list {
+        .org {
+            margin: 10px 5px 20px;
+            overflow: hidden;
+            .org-img {
+                width: 60px;
+                height: 60px;
+                margin: 0 10px;
+                border: 1px solid $color-grey-2;
+            }
+
+            .summary {
+                width:360px;
+                h6{
+                    margin: 0 0 3px 0;
+                    font-size: 1.15em;
+                    font-weight: 400;
+                }
+                .position{
+                    display:block;
+                    margin-bottom: 5px;
+                }
+                .datetime{
+                    font-size: .8725em;
+                }
+            }
+            .highlights{
+                padding: 0 20px 0 20px;
+                position: relative;
+                ul{
+                    height: 50px;
+                    display: table-cell;
+                    vertical-align: middle;
+                }
+                &:before{
+                    content: "{";
+                    left: 0;
+                }
+                &:after{
+                    content: "}";
+                    right: 0;
+                }
+                &:before, &:after{
+                    position: absolute;
+                    font-size: 3em;
+                    line-height: 1em;
+                    top:0;
+                }
+            }
+        }
+    }
+
+}
+.section-skills {
+    .skill-stats{
+        border-radius: 3px;
+        font-size: 11px;
+        display: flex;
+        text-align: center;
+        color: #fff;
+        overflow: hidden;
+        .javascript-skill{
+            background: #D32F2F;
+            flex:5;
+        }
+        .html-skill{
+            background: #00796B;
+            flex:2;
+        }
+        .css-skill{
+            background: #0288D1;
+            flex:2;
+        }
+        .other-skill{
+            background: #455A64;
+            flex:1;
+        }
+    }
+    .bullet-list{
+        margin: 10px 10px 20px;
+        .item{
+            &:hover{
+                box-shadow: inset 2px 2px 2px rgba(255, 255, 255, .4), inset -2px -2px 2px rgba(0, 0, 0, .4);
+            }
+            height: 22px;
+            border-radius: 11px;
+            color: #fff;
+            font-size: 13px;
+            display: inline-block;
+            box-sizing: border-box;
+            padding: 3px 10px;
+            margin: 10px 6px 0 0;
+            &.javascript-skill{
+                background: #D32F2F;
+            }
+            &.html-skill{
+                background: #00796B;
+            }
+            &.css-skill{
+                background: #0288D1;
+            }
+            &.other-skill{
+                background: #455A64;
+            }
+        }
+    }
+    .extra{
+        margin:10px 0 5px;
+    }
+}

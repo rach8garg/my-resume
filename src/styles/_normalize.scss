@@ -1,0 +1,48 @@
+html {
+    font-size: 16px;
+    background-color: rgba(214, 214, 214, 0.5)
+}
+
+body {
+    font: 100% $font-stack;
+    color: $color-grey-1;
+    box-sizing: border-box;
+}
+
+a {
+    color: $color-blue-1;
+}
+
+a:focus,
+a:hover {
+    text-decoration: none;
+    outline: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #777;
+}
+
+li,
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+code {
+    color: $color-grey-1;
+}
+
+::-ms-clear {
+    display: none;
+}
+
+pre {
+    white-space: pre-wrap;
+}

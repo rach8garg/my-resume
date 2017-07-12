@@ -1,0 +1,22 @@
+//SASS variables
+$font-stack: "robotolight","Arial","sans-serif";
+$color-white-0: #fff; //basic white
+$color-white-2: #cecece; //dark grey
+
+$color-blue-1: #0078ff; //medium blue
+$color-blue-2: #1A237E; //soot black
+
+$color-grey-1: #484848; //dark grey
+$color-grey-2: #adadad; //light grey
+
+$color-primary-1: #283593;
+$color-primary-2: #303F9F;
+$color-primary-3: #3949AB;
+
+$page-height:1250px;
+$width-wrapper: 1200px;
+$width-left: 300px;
+$width-right: calc(#{$width-wrapper} - #{$width-left});
+$break-xsmall: 320px;
+$break-small: 799px;
+$break-medium: 991px;
