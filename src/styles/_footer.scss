@@ -1,0 +1,23 @@
+.app-footer {
+    height: 40px;
+    width: 100%;
+    font-size: .850rem;
+    background: #000;
+    color: #fff;
+    .updated{
+        line-height: 40px;
+        height: 40px;
+        margin: 0 70px;
+    }
+    .hashtags{
+        line-height: 40px;
+        height: 40px;
+        margin: 0 40px;
+        .hashtag{
+            font-size: .9rem;
+            margin: 0 10px;
+            font-weight: 700;
+            text-decoration: none;
+        }
+    }
+}

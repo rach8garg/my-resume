@@ -1,11 +1,15 @@
 //SASS variables
-$font-stack: "robotolight","Arial","sans-serif";
+$font-stack: "exoregular","Arial","sans-serif";
+
+//White
 $color-white-0: #fff; //basic white
-$color-white-2: #cecece; //dark grey
+$color-white-2: #cecece; //light
 
-$color-blue-1: #0078ff; //medium blue
-$color-blue-2: #1A237E; //soot black
+//Blue
+$color-blue-1: #0078ff;
+$color-blue-2: #1A237E;
 
+//Grey
 $color-grey-1: #484848; //dark grey
 $color-grey-2: #adadad; //light grey
 
@@ -15,7 +19,7 @@ $color-primary-3: #3949AB;
 
 $page-height:1250px;
 $width-wrapper: 1200px;
-$width-left: 300px;
+$width-left: 320px;
 $width-right: calc(#{$width-wrapper} - #{$width-left});
 $break-xsmall: 320px;
 $break-small: 799px;

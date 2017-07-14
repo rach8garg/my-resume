@@ -17,14 +17,8 @@
     <a href="javascript:void(0)" class="download" id="download">Download</a>
     <div class="wrapper flip-container">
         <header class="main-header">
-            <span class="pull-left"><strong>Updated : </strong> <time id="dateTime"><time></span>
-            <span class="pull-right">
-				<a href="javascript:void(0)" class="hashtag">#HTML5</a>
-				<a href="javascript:void(0)" class="hashtag">#CSS</a>
-				<a href="javascript:void(0)" class="hashtag">#JavaScript</a>
-				<a href="javascript:void(0)" class="hashtag">#AngularJS</a>
-				<a href="javascript:void(0)" class="hashtag">#ReactJS</a>
-			</span>
+            <span class="tab">Resume</span>
+            <span class="flip-btn pull-right material-icons" id="flipBtn"></span>
         </header>
         <main class="main-content flipper">
             <div class="page-front">
@@ -85,18 +79,18 @@
                 </aside>
                 <article class="right-section pull-right">
                     <section class="section-intro content-box">
-                        <h2 class="section-header">INTRO</h2>
-                        <div class="section-content">
-                            <p>Front End Engineer with 6+ years of experience in building Rich Internet Applications (RIAs) for desktop and mobile devices.</p>
+                        <h2 class="section-header pull-left">INTRO</h2>
+                        <div class="section-content clear-all">
+                            <p>Front End Engineer who takes pride in writing highly organised and efficient code. I have <strong>6+</strong> years of experience in building Rich Internet Applications (RIAs) for desktop and mobile devices.</p>
                             <p>A diligent &amp; passionate person at work, gregarious &amp; lively outside.</p>
                         </div>
                     </section>
                     <section class="section-experience-education content-box">
-                        <h2 class="section-header">EXPERIENCE &amp; EDUCATION</h2>
-                        <div class="section-content">
+                        <h2 class="section-header pull-right">EXPERIENCE &amp; EDUCATION</h2>
+                        <div class="section-content clear-all">
                             <ul class="org-list">
                                 <li class="org clear-all">
-                                    <img src="./images/juniper.png" class="org-img pull-left" />
+                                    <span class="org-img pull-left material-icons">work</span>
                                     <div class="summary pull-left">
                                         <h6>Juniper Networks, Bangalore</h6>
 										<strong class="position">Software Engineer 3</strong>
@@ -110,7 +104,7 @@
                                     </div>
                                 </li>
                                 <li class="org clear-all">
-                                    <img src="./images/tavant.png" class="org-img pull-left" />
+                                    <span class="org-img pull-left material-icons">work</span>
                                     <div class="summary pull-left">
                                         <h6>Tavant Technologies, Bangalore</h6>
 										<strong class="position">Senior UI Engineer</strong>
@@ -124,7 +118,7 @@
                                     </div>
                                 </li>
 								<li class="org clear-all">
-                                    <img src="./images/lpu.jpg" class="org-img pull-left" />
+                                    <span class="org-img pull-left material-icons">school</span>
                                     <div class="summary pull-left">
                                         <h6>Lovely Professional University, Jalandhar</h6>
 										<strong class="position">Bachelor of Technology, Computer Science</strong>
@@ -137,7 +131,7 @@
                                     </div>
                                 </li>
 								<li class="org clear-all">
-                                    <img src="./images/aps.png" class="org-img pull-left" />
+                                    <span class="org-img pull-left material-icons">local_library</span>
                                     <div class="summary pull-left">
                                         <h6>Army Public School, Jalandhar</h6>
                                         <datetime class="datetime">April 1995 - March 2007</datetime>
@@ -154,14 +148,8 @@
                         </div>
                     </section>
                     <section class="section-skills content-box">
-                        <h2 class="section-header">TECHNICAL SKILLS</h2>
-                        <div class="section-content">
-                            <div class="skill-stats">
-                                <span class="javascript-skill" title="javascript">JavaScript</span>
-                                <span class="html-skill" title="html">HTML</span>
-                                <span class="css-skill" title="css">CSS</span>
-                                <span class="other-skill" title="others">Others</span>
-                            </div>
+                        <h2 class="section-header pull-left">TECHNICAL SKILLS</h2>
+                        <div class="section-content clear-all">
                             <ul class="bullet-list">
                                 <li class="item javascript-skill">jQuery</li>
                                 <li class="item javascript-skill">NPM</li>
@@ -186,6 +174,12 @@
                                 <li class="item other-skill">Git</li>
                                 <li class="item other-skill">SVN</li>
                             </ul>
+                            <div class="skill-stats">
+                                <span class="javascript-skill" title="javascript">JavaScript</span>
+                                <span class="html-skill" title="html">HTML</span>
+                                <span class="css-skill" title="css">CSS</span>
+                                <span class="other-skill" title="others">Others</span>
+                            </div>
                             <div class="extra">
                                 <strong>Softwares Packages :</strong>
                                 Atom, Eclipse, Aptana Studio, Brackets.io, Sublime Text, WinSCP, MobaXterm, Dreamweaver
@@ -197,8 +191,8 @@
                         </div>
                     </section>
                     <section class="section-responsibilities content-box">
-                        <h2 class="section-header">RESPONSIBILITIES</h2>
-                        <div class="section-content">
+                        <h2 class="section-header pull-right">RESPONSIBILITIES</h2>
+                        <div class="section-content clear-all">
                             <ul class="list">
                                 <li>
                                     Understand user requirements and interact with clients and onsite coordinators.
@@ -228,8 +222,8 @@
 						</div>
                     </section>
                     <section class="section-achievements content-box">
-                        <h2 class="section-header">ACHIEVEMENTS &amp; ACTIVITIES</h2>
-                        <div class="section-content">
+                        <h2 class="section-header pull-left">ACHIEVEMENTS &amp; ACTIVITIES</h2>
+                        <div class="section-content clear-all">
                             <ul class="list">
                                 <li>
                                     Received Department Spotlight Award in Juniper Networks for rapid delivery.
@@ -458,6 +452,16 @@
                 </article>
             </div>
         </main>
+        <footer class="app-footer">
+            <span class="updated pull-left"><strong>UPDATED : </strong> <time id="dateTime"><time></span>
+            <span class="pull-right hashtags">
+                <a href="javascript:void(0)" class="hashtag">#HTML5</a>
+                <a href="javascript:void(0)" class="hashtag">#CSS</a>
+                <a href="javascript:void(0)" class="hashtag">#JavaScript</a>
+                <a href="javascript:void(0)" class="hashtag">#AngularJS</a>
+                <a href="javascript:void(0)" class="hashtag">#ReactJS</a>
+            </span>
+        </footer>
         </div>
         <script type="text/javascript" src="/assets/app.bundle.js"></script>
 </body>

@@ -4,10 +4,12 @@ import html2canvas from 'html2canvas';
 import $ from 'jquery';
 import styles from "./styles/styles.scss";
 
+    let rotation            = 0;
     let altKey 				= 18;		//Used to save the screenshot of template
     let captureId 			= "capture";
     let downloadId 			= "download";
     let canvasId 			= "resumeTemplate";
+    let flipId 		   	    = "flipBtn";
     let fileName 			= "Rachit_Garg_Web_Developer.png";
     let downloadElm 		= document.getElementById(downloadId);
     let captureElm 			= document.getElementById(captureId);
@@ -34,3 +36,10 @@ import styles from "./styles/styles.scss";
 	// }
 
     document.querySelector("#dateTime").innerHTML = "2017-07-09";
+
+    document.addEventListener("click", (event) => {
+        if(event.target.id === flipId){
+            rotation = rotation + 180;
+            document.querySelector(".flipper").style.transform = `rotateY(${rotation}deg)`;
+        }
+    });

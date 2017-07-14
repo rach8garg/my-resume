@@ -5,13 +5,24 @@
     float:right;
 }
 
-.hashtag{
-    font-size: .875em;
-    font-weight: 700;
-}
 .download{
     display:none;
 }
 .clear-all{
     clear:both;
+}
+.material-icons{
+    font-family: 'material-icons';
+}
+.text-left{
+    text-align: left;
+}
+.text-right{
+    text-align: left;
+}
+.left-head{
+    padding: 0 20px 0 70px;
+}
+.right-head{
+    padding: 0 70px 0 20px;
 }
