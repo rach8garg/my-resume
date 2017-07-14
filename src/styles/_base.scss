@@ -1,4 +1,8 @@
 .wrapper {
     width: $width-wrapper;
     margin: 0 auto;
+    height: $page-height;
+    .main-content {
+        height: $page-height;
+    }
 }

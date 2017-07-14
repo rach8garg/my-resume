@@ -16,18 +16,22 @@
 <body id="capture">
     <a href="javascript:void(0)" class="download" id="download">Download</a>
     <div class="wrapper flip-container">
-        <header class="main-header">
-            <span class="tab">Resume</span>
-            <span class="flip-btn pull-right material-icons" id="flipBtn"></span>
-        </header>
         <main class="main-content flipper">
             <div class="page-front">
+                <header class="app-header">
+                    <span class="tab">Resume</span>
+                    <span class="flip-btn pull-right material-icons" id="flipToBack"></span>
+                </header>
                 <aside class="left-section pull-left">
                     <div class="profile-badge">
                         <img src="./images/cover-img.jpg" class="cover-image">
                         <img src="./images/profile-img.jpg" class="profile-image" />
                         <h5 class="name">Rachit Garg</h5>
                         <h6 class="title">User Interface Engineer</h6>
+                    </div>
+                    <div class="intro">
+                        <p>Front End Engineer who takes pride in writing highly organised and efficient code. I have <strong>6+</strong> years of experience in building Rich Internet Applications (RIAs) for desktop and mobile devices.</p>
+                        <p>A diligent &amp; passionate person at work, gregarious &amp; lively outside.</p>
                     </div>
                     <div class="contact-info">
                         <ul class="list">
@@ -45,10 +49,6 @@
                                 <span class="pull-left">28-11-1988</span>
                             </li>
                             <li class="clear-all">
-                                <label class="pull-left">Gender <i class="pull-right">:</i></label>
-                                <span class="pull-left">Male</span>
-                            </li>
-                            <li class="clear-all">
                                 <label class="pull-left">Languages <i class="pull-right">:</i></label>
                                 <span class="pull-left">English, Hindi, Punjabi</span>
                             </li>
@@ -63,13 +63,11 @@
                         </ul>
                     </div>
                     <div class="interests-info">
-                        <h3 class="section-header">In my free time</h3>
+                        <!-- <h2 class="section-header pull-left">In my free time</h2> -->
                         <ul class="list">
                             <li>Games - Indoor, outdoor, digital</li>
-                            <li>Internet is like my best friend</li>
-                            <li>Reading articles (UI, geography, machines)</li>
-                            <li>Social Networking</li>
-                            <li>TED Videos</li>
+                            <li>Internet - Surfing and Reading</li>
+                            <li>TV Series and Videos</li>
                             <li>Movies - Thriller &amp; Drama</li>
                             <li>Music - Trance &amp; Progressive</li>
                             <li>Adventure - Hiking &amp; Safaris</li>
@@ -78,13 +76,6 @@
                     </div>
                 </aside>
                 <article class="right-section pull-right">
-                    <section class="section-intro content-box">
-                        <h2 class="section-header pull-left">INTRO</h2>
-                        <div class="section-content clear-all">
-                            <p>Front End Engineer who takes pride in writing highly organised and efficient code. I have <strong>6+</strong> years of experience in building Rich Internet Applications (RIAs) for desktop and mobile devices.</p>
-                            <p>A diligent &amp; passionate person at work, gregarious &amp; lively outside.</p>
-                        </div>
-                    </section>
                     <section class="section-experience-education content-box">
                         <h2 class="section-header pull-right">EXPERIENCE &amp; EDUCATION</h2>
                         <div class="section-content clear-all">
@@ -148,7 +139,7 @@
                         </div>
                     </section>
                     <section class="section-skills content-box">
-                        <h2 class="section-header pull-left">TECHNICAL SKILLS</h2>
+                        <h2 class="section-header pull-right">TECHNICAL SKILLS</h2>
                         <div class="section-content clear-all">
                             <ul class="bullet-list">
                                 <li class="item javascript-skill">jQuery</li>
@@ -162,6 +153,7 @@
                                 <li class="item other-skill">Sencha Touch</li>
                                 <li class="item html-skill">HTML5</li>
                                 <li class="item html-skill">Bootstrap</li>
+                                <li class="item javascript-skill">Webpack</li>
                                 <li class="item html-skill">Foundation</li>
                                 <li class="item css-skill">CSS</li>
                                 <li class="item css-skill">SASS</li>
@@ -222,7 +214,7 @@
 						</div>
                     </section>
                     <section class="section-achievements content-box">
-                        <h2 class="section-header pull-left">ACHIEVEMENTS &amp; ACTIVITIES</h2>
+                        <h2 class="section-header pull-right">ACHIEVEMENTS &amp; ACTIVITIES</h2>
                         <div class="section-content clear-all">
                             <ul class="list">
                                 <li>
@@ -241,12 +233,25 @@
                         </div>
                     </section>
                 </article>
+                <div class="clear-all"></div>
+                <footer class="app-footer">
+                    <span class="updated pull-left"><strong>UPDATED : </strong> <time class="date-time"><time></span>
+                    <span class="pull-right hashtags">
+                        <a href="javascript:void(0)" class="hashtag">#HTML5</a>
+                        <a href="javascript:void(0)" class="hashtag">#CSS</a>
+                        <a href="javascript:void(0)" class="hashtag">#JavaScript</a>
+                        <a href="javascript:void(0)" class="hashtag">#AngularJS</a>
+                        <a href="javascript:void(0)" class="hashtag">#ReactJS</a>
+                    </span>
+                </footer>
             </div>
-            <div class="clear-all"></div>
             <div class="page-back">
+                <header class="app-header">
+                    <span class="tab">PROJECTS</span>
+                    <span class="flip-btn pull-right material-icons" id="flipToFront"></span>
+                </header>
                 <article>
                     <section class="section-projects content-box">
-                        <h2 class="section-header">PROJECT SUMMARY</h2>
                         <div class="section-content">
                             <div class="project-detail jtacwb">
                                 <div class="summary">
@@ -450,18 +455,18 @@
                         </div>
                     </section>
                 </article>
+                <footer class="app-footer">
+                    <span class="updated pull-left"><strong>UPDATED : </strong> <time class="date-time"><time></span>
+                    <span class="pull-right hashtags">
+                        <a href="javascript:void(0)" class="hashtag">#HTML5</a>
+                        <a href="javascript:void(0)" class="hashtag">#CSS</a>
+                        <a href="javascript:void(0)" class="hashtag">#JavaScript</a>
+                        <a href="javascript:void(0)" class="hashtag">#AngularJS</a>
+                        <a href="javascript:void(0)" class="hashtag">#ReactJS</a>
+                    </span>
+                </footer>
             </div>
         </main>
-        <footer class="app-footer">
-            <span class="updated pull-left"><strong>UPDATED : </strong> <time id="dateTime"><time></span>
-            <span class="pull-right hashtags">
-                <a href="javascript:void(0)" class="hashtag">#HTML5</a>
-                <a href="javascript:void(0)" class="hashtag">#CSS</a>
-                <a href="javascript:void(0)" class="hashtag">#JavaScript</a>
-                <a href="javascript:void(0)" class="hashtag">#AngularJS</a>
-                <a href="javascript:void(0)" class="hashtag">#ReactJS</a>
-            </span>
-        </footer>
         </div>
         <script type="text/javascript" src="/assets/app.bundle.js"></script>
 </body>

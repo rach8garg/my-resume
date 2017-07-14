@@ -1,13 +1,4 @@
-.section-intro{
-    .section-header{
-        @extend .left-head;
-    }
-}
-
 .section-experience-education {
-    .section-header{
-        @extend .right-head;
-    }
     .org-list {
         .org {
             margin: 10px 0 15px;
@@ -66,9 +57,6 @@
 
 }
 .section-skills {
-    .section-header{
-        @extend .left-head;
-    }
     .skill-stats{
         border-radius: 3px;
         font-size: 11px;
@@ -123,19 +111,10 @@
     }
 }
 .section-responsibilities{
-    .section-header{
-        @extend .right-head;
-    }
 }
 .section-achievements{
-    .section-header{
-        @extend .left-head;
-    }
 }
 .section-projects {
-    .section-header{
-        @extend .right-head;
-    }
     .section-content{
         padding:0 !important;
         .project-detail{

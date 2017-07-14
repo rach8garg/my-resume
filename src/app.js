@@ -9,7 +9,8 @@ import styles from "./styles/styles.scss";
     let captureId 			= "capture";
     let downloadId 			= "download";
     let canvasId 			= "resumeTemplate";
-    let flipId 		   	    = "flipBtn";
+    let flipToBack	   	    = "flipToBack";
+    let flipToFront	   	    = "flipToFront";
     let fileName 			= "Rachit_Garg_Web_Developer.png";
     let downloadElm 		= document.getElementById(downloadId);
     let captureElm 			= document.getElementById(captureId);
@@ -35,11 +36,15 @@ import styles from "./styles/styles.scss";
 	// 	});
 	// }
 
-    document.querySelector("#dateTime").innerHTML = "2017-07-09";
+    document.querySelector(".date-time").innerHTML = "2017-07-09";
 
     document.addEventListener("click", (event) => {
-        if(event.target.id === flipId){
-            rotation = rotation + 180;
+        if(event.target.id === flipToBack){
+            rotation = 180;
+            document.querySelector(".flipper").style.transform = `rotateY(${rotation}deg)`;
+        }
+        if(event.target.id === flipToFront){
+            rotation = 0;
             document.querySelector(".flipper").style.transform = `rotateY(${rotation}deg)`;
         }
     });
