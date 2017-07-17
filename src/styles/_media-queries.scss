@@ -1,0 +1,10 @@
+/*==========================Media Queries=====================*/
+
+@media screen and (max-width: $break-medium) {
+    .wrapper, .flip-container, .page-front, .page-back {
+        width: 100%;
+    }
+    .flip-container {
+    	perspective: 100%;
+    }
+}
