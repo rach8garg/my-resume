@@ -40,7 +40,14 @@ module.exports = function(params){
                 },
                 {
                     test: /\.(ttf|otf|eot|svg|woff(2)?)(\?[a-z0-9]+)?$/,
-                    loader: 'file-loader?name=fonts/[name].[ext]'
+                    loaders: 'file-loader?name=fonts/[name].[ext]'
+                },
+                {
+                    test: /\.(gif|png|jpe?g|svg)$/i,
+                    loaders: [
+                        'file-loader?hash=sha512&digest=hex&name=[hash].[ext]',
+                        'image-webpack-loader'
+                    ]
                 }
             ]
         },

@@ -36,7 +36,8 @@ import styles from "./styles/styles.scss";
 	// 	});
 	// }
 
-    document.querySelector(".date-time").innerHTML = "2017-07-09";
+    var dates = document.getElementsByClassName("date-time");
+    dates[1].innerHTML = dates[0].innerHTML = "2017-07-09";
 
     document.addEventListener("click", (event) => {
         if(event.target.id === flipToBack){

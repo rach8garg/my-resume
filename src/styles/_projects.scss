@@ -1,0 +1,95 @@
+.section-projects {
+    .section-content{
+        padding:0 !important;
+        .project-detail{
+            &.jtacwb{
+                .summary{
+                    background: $color-primary-1;
+                }
+            }
+            &.r7-lol{
+                .summary{
+                    background: $color-primary-2;
+                }
+            }
+            &.fox-sports{
+                .summary{
+                    background: $color-primary-1;
+                }
+            }
+            &.ram-cnbc{
+                .summary{
+                    background: $color-primary-2;
+                }
+            }
+            &.adx-nyt{
+                .summary{
+                    background: $color-primary-1;
+                }
+            }
+            &.dealer-net{
+                .summary{
+                    background: $color-primary-2;
+                }
+            }
+            &.clb2c-mortgage{
+                .summary{
+                    background: $color-primary-1;
+                }
+            }
+            &.ampt-nyt{
+                .summary{
+                    background: $color-primary-2;
+                }
+            }
+            &.trelleborg{
+                .summary{
+                    background: $color-primary-1;
+                }
+            }
+            &.twms-mobile{
+                .summary{
+                    background: $color-primary-2;
+                }
+            }
+            &.mb2c-mortgage{
+                .summary{
+                    background: $color-primary-1;
+                }
+            }
+            &.success-trade{
+                .summary{
+                    background: $color-primary-2;
+                }
+            }
+        }
+    }
+    .project-detail{
+        display: flex;
+        a{
+            color: #fff;
+        }
+        .summary{
+            flex:2;
+            padding:15px;
+            color:#fff;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            span{
+                margin: 4px 0;
+            }
+        }
+        .description{
+            padding:15px;
+            flex:9;
+            border-bottom: 1px solid $color-grey-2;
+        }
+    }
+    .list {
+        li {
+            list-style-type: square;
+            margin: 6px 20px;
+        }
+    }
+}
