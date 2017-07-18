@@ -3,6 +3,7 @@
         .org {
             margin: 10px 0 15px;
             overflow: hidden;
+            display: flex;
             .org-img {
                 width: 60px;
                 height: 60px;
@@ -15,7 +16,10 @@
             }
 
             .summary {
-                width:360px;
+                width: 40%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
                 h6{
                     margin: 0 0 3px 0;
                     font-size: 1.15em;
@@ -32,11 +36,8 @@
             .highlights{
                 padding: 0 20px 0 20px;
                 position: relative;
-                ul{
-                    height: 50px;
-                    display: table-cell;
-                    vertical-align: middle;
-                }
+                display: flex;
+                align-items: center;
                 &:before{
                     content: "{";
                     left: 0;
@@ -48,8 +49,6 @@
                 &:before, &:after{
                     position: absolute;
                     font-size: 3em;
-                    line-height: 1em;
-                    top:0;
                 }
             }
         }
