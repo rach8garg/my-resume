@@ -57,11 +57,13 @@
 }
 .section-skills {
     .skill-stats{
+        margin-bottom: 20px;
         border-radius: 3px;
         font-size: 11px;
         display: flex;
         text-align: center;
         color: #fff;
+        width: 95%;
         overflow: hidden;
         .javascript-skill{
             background: $color-blue-1;

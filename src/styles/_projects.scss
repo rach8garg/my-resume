@@ -1,6 +1,6 @@
 .section-projects {
     .project-detail {
-        padding: 15px;
+        padding: 20px 40px 20px;
         border-bottom: 1px solid $color-grey-2;
         &:nth-child(odd){
             border-left: 4px solid $color-grey-1;
@@ -40,14 +40,29 @@
         }
 
         .description {
-            padding: 1px 5px;
+            padding: 1px 0;
+        }
+        .intro{
+            margin: 15px 0 20px;
+        }
+
+    }
+    .others{
+        overflow: hidden;
+        h3{
+            margin:0 0 10px 0;
+        }
+        .summary{
+            width: 50%;
+            float: left;
+            padding:5px 80px 5px 10px;
         }
     }
 
     .list {
         li {
             list-style-type: square;
-            margin: 6px 20px;
+            margin: 6px 35px;
         }
     }
 }

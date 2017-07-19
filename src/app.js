@@ -1,7 +1,6 @@
 'use-strict';
 
 import html2canvas from 'html2canvas';
-import $ from 'jquery';
 import styles from "./styles/styles.scss";
 
     let rotation            = 0;
@@ -15,29 +14,27 @@ import styles from "./styles/styles.scss";
     let downloadElm 		= document.getElementById(downloadId);
     let captureElm 			= document.getElementById(captureId);
 
-    $(document).on("keyup", (event) => {
-        if ( event.which === altKey) _convertToCanvas(event);
-    });
+    let app = function(){};
 
     /*
 		Responsible for saving screenshot of current browser tab
 	*/
-	// convertToCanvas = (event) => {
-	// 	html2canvas(captureElm, {
-	// 		onrendered: (canvas) => {
-	// 			canvas.setAttribute("id", canvasId);
-	// 			document.body.appendChild(canvas);
-	// 			downloadElm.setAttribute("href",document.getElementById(canvasId).toDataURL());
-	// 			downloadElm.setAttribute("download", fileName);
-	// 			downloadElm.click();
-	// 			document.getElementById(canvasId).outerHTML = "";
-	// 			delete document.getElementById(canvasId);
-	// 		}
-	// 	});
-	// }
+	app.convertToCanvas = (event) => {
+		html2canvas(captureElm, {
+			onrendered: (canvas) => {
+				canvas.setAttribute("id", canvasId);
+				document.body.appendChild(canvas);
+				downloadElm.setAttribute("href",document.getElementById(canvasId).toDataURL());
+				downloadElm.setAttribute("download", fileName);
+				downloadElm.click();
+				document.getElementById(canvasId).outerHTML = "";
+				delete document.getElementById(canvasId);
+			}
+		});
+	};
 
     var dates = document.getElementsByClassName("date-time");
-    dates[1].innerHTML = dates[0].innerHTML = "2017-07-09";
+    dates[1].innerHTML = dates[0].innerHTML = "20-07-2017";
 
     document.addEventListener("click", (event) => {
         if(event.target.id === flipToBack){
@@ -48,4 +45,8 @@ import styles from "./styles/styles.scss";
             rotation = 0;
             document.querySelector(".flipper").style.transform = `rotateY(${rotation}deg)`;
         }
+    });
+
+    document.addEventListener("keyup", (event) => {
+        if ( event.which === altKey) app.convertToCanvas(event);
     });
