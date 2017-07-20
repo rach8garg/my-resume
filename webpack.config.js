@@ -8,9 +8,9 @@ module.exports = function(params){
         context: path.resolve( __dirname, './src'),     // __dirname refers to the directory where this webpack.config.js lives
         entry: './app.js',      //This can take multiple inputs in form of an array
         output: {
-            path: path.resolve(__dirname, './dist/assets'),    // __dirname refers to the directory where this webpack.config.js lives
+            path: path.resolve(__dirname, './dist/assets/'),    // __dirname refers to the directory where this webpack.config.js lives
             filename: 'app.bundle.js',
-            publicPath: '/assets'
+            publicPath: '/assets/'
         },
         watch: true,
         module: {
@@ -40,10 +40,12 @@ module.exports = function(params){
                 },
                 {
                     test: /\.(ttf|otf|eot|svg|woff(2)?)(\?[a-z0-9]+)?$/,
+                    exclude: [/node_modules/],
                     loaders: 'file-loader?name=fonts/[name].[ext]'
                 },
                 {
-                    test: /\.(gif|png|jpe?g|svg)$/i,
+                    test: /\.(gif|png|jpe?g)$/i,
+                    exclude: [/node_modules/],
                     loaders: [
                         'file-loader?hash=sha512&digest=hex&name=[hash].[ext]',
                         'image-webpack-loader'

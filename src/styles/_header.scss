@@ -14,22 +14,16 @@
         font-size: 1.1rem;
     }
     .flip-btn{
-        background: $color-blue-3;
-        font-size: 2rem;
+        background: url("../images/arrow_forward.svg") no-repeat $color-blue-3;
+        background-position: 6px 6px;
+        background-size: 30px 30px;
         width: 40px;
         height: 40px;
-        position: relative;
-        padding: 4px;
         cursor: pointer;
-        &:after{
-            content:'arrow_forward';
-            display: inline-block;
-            transition:0.7s;
-        }
+        display: inline-block;
+        transition:0.7s;
         &:hover{
-            &:after{
-                transform: rotateY(180deg);
-            }
+            transform: rotateY(180deg);
         }
     }
 }
