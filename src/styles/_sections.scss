@@ -67,49 +67,46 @@
     .skill-stats{
         margin-bottom: 20px;
         border-radius: 3px;
-        font-size: 11px;
+        font-size: 0.7rem;
         text-align: center;
         color: #fff;
         width: 98%;
         overflow: hidden;
-        .javascript-skill{
-            background: $color-blue-1;
-            width:50%;
+        .skill-bar{
+            height: 18px;
+            line-height: 19px;
             float: left;
+        }
+        .javascript-skill{
+            width:50%;
         }
         .html-skill{
-            background: $color-blue-3;
             width:20%;
-            float: left;
         }
         .css-skill{
-            background: $color-blue-5;
             width:20%;
-            float: left;
         }
         .other-skill{
-            background: $color-grey-2;
             width:10%;
-            float: left;
         }
     }
     .bullet-list{
         margin: 0 0 20px;
         .item{
             @extend .bullet;
-            &.javascript-skill{
-                background: $color-blue-1;
-            }
-            &.html-skill{
-                background: $color-blue-3;
-            }
-            &.css-skill{
-                background: $color-blue-5;
-            }
-            &.other-skill{
-                background: $color-grey-2;
-            }
         }
+    }
+    .javascript-skill{
+        background: $color-blue-1;
+    }
+    .html-skill{
+        background: $color-blue-3;
+    }
+    .css-skill{
+        background: $color-blue-5;
+    }
+    .other-skill{
+        background: $color-grey-2;
     }
     .extra{
         margin:10px 0 5px;

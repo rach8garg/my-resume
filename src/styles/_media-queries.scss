@@ -1,7 +1,16 @@
 /*==========================Media Queries=====================*/
 
 @media screen and (max-width: $break-medium) {
-    .wrapper, .flip-container, .page-front, .page-back {
+    .flip-container{
+        width: 100%;
+        height:auto;
+        .page-front, .page-back{
+            width: 100%;
+            height:auto;
+        }
+    }
+    .wrapper{
+        height:auto;
         width: 100%;
     }
 }
@@ -10,8 +19,22 @@
         font-size: 14px;
         background: #fff;
     }
-    .left-section, .right-section,.section-projects,
-    .wrapper, .flip-container, .page-front, .page-back {
+    .flip-container{
+        width: 100%;
+        height:auto;
+        .page-front, .page-back{
+            width: 100%;
+            height:auto;
+        }
+        .page-front {
+            &.hidden{
+                .section-achievements, .section-skills{
+                    display: none;
+                }
+            }
+        }
+    }
+    .left-section, .right-section, .section-projects, .wrapper {
         width: 100%;
         height:auto;
     }
@@ -62,9 +85,6 @@
             &.section-achievements{
                 padding-bottom: 10px;
             }
-            &.section-experience-education{
-
-            }
         }
         .section-header{
             font-size: 0.7em;
@@ -81,6 +101,7 @@
     }
     .section-projects {
         .project-detail{
+            padding: 25px 20px 20px;
             .summary{
                 .name{
                     float: none;
