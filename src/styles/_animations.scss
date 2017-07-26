@@ -1,36 +1,182 @@
-/* entire container, keeps perspective */
 .flip-container {
 	perspective: $width-wrapper;
-}
-
-.flip-container, .page-front, .page-back {
 	width: $width-wrapper;
+	.flipper {
+		transition: 1s;
+		transform-style: preserve-3d;
+		position: relative;
+	}
+
+	.page-back,
+	.page-front {
+		width: $width-wrapper;
+		backface-visibility: hidden;
+		position: absolute;
+		top: 0;
+		left: 0;
+		background: $color-white-0;
+		box-shadow: 1px 1px 1px 0 $color-grey-4;
+		height: $page-height;
+	}
+	.page-front {
+		transform: rotateY(0deg);
+	}
+
+	.page-back {
+		transform: rotateY(180deg);
+	}
 }
 
-/* flip speed goes here */
-.flipper {
-	transition: 1s;
-	transform-style: preserve-3d;
+.cover-frame {
+	background: linear-gradient(#0077b8, #36b9ff);
 	position: relative;
+	height: 135px;
+
+	svg {
+		max-width: 100%;
+		height: auto;
+		display: block;
+	}
+	.clouds {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		overflow: hidden;
+		transform: translateZ(0);
+	}
+
+	.cloud {
+		animation-name: cloud-movement;
+		animation-timing-function: linear;
+		animation-direction: forwards;
+		animation-iteration-count: infinite;
+		animation-duration: 12s;
+		position: absolute;
+		top: 0;
+		width: 200px;
+		right: 0;
+		opacity: 1;
+		&.front {
+			z-index: 9;
+		}
+		&.distant {
+			z-index: 1;
+		}
+		&.background {
+			z-index: 1;
+		}
+		&.smaller {
+			margin-right: 200px;
+			width: 100px;
+			margin-top: 10px;
+		}
+		&.small {
+			margin-right: 100px;
+			width: 150px;
+		}
+		&.slow {
+			animation-duration: 10s;
+		}
+		&.slower {
+			animation-duration: 12s;
+		}
+		&.slowest {
+			animation-duration: 14s;
+		}
+		&.super-slow {
+			animation-duration: 20s;
+		}
+	}
 }
 
-/* hide back of pane during swap */
-.page-front, .page-back {
-	backface-visibility: hidden;
+@-webkit-keyframes cloud-movement {
+	0% {
+		opacity: 0.1;
+		transform: translateX(300px);
+	}
+
+	10% {
+		opacity: 0.7;
+	}
+
+	90% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 0;
+		transform: translateX(-300px);
+	}
+}
+
+.windmill {
+	height: 135px;
+	margin: 0 auto;
 	position: absolute;
-	top: 0;
-	left: 0;
-	background: $color-white-0;
-	box-shadow: 1px 1px 1px 0 #b7b7b7;
-}
+	width: 100%;
+	z-index: 100;
 
-/* front pane, placed above back */
-.page-front {
-	z-index: 2;
-	transform: rotateY(0deg);
-}
+	.windmill-base {
+		border-bottom: 10px solid $color-grey-1;
+		border-left: 5px solid transparent;
+		border-right: 5px solid transparent;
+		height: 0;
+		width: 20px;
+		left: 40px;
+		bottom: -2px;
+		border-bottom-left-radius: 2px;
+		border-bottom-right-radius: 2px;
+		position: absolute;
+	}
 
-/* back, initially hidden pane */
-.page-back {
-	transform: rotateY(180deg);
+	.windmill-body {
+		z-index: 0;
+		width: 8px;
+		height: 65px;
+		background: $color-grey-1;
+		border-radius: 5px / 70px;
+		border-bottom-left-radius: 5px;
+		border-bottom-right-radius: 5px;
+		left: 46px;
+		bottom: 0;
+		position: absolute;
+	}
+
+	.windmill-wings {
+		width: 5px;
+		height: 75px;
+		background: $color-grey-1;
+		border-radius: 4px / 60px;
+		left: 47px;
+		top: 34px;
+		position: absolute;
+		&.wing1{
+			transform: rotate(30deg);
+			animation: rotate1 5s infinite linear;
+		}
+		&.wing2{
+			transform: rotate(120deg);
+			animation: rotate2 5s infinite linear;
+		}
+	}
+}
+@keyframes rotate1 {
+	from {
+		transform: rotate(390deg);
+	}
+
+	to {
+		transform: rotate(30deg);
+	}
+}
+@keyframes rotate2 {
+	from {
+		transform: rotate(480deg);
+	}
+
+	to {
+		transform: rotate(120deg);
+	}
 }

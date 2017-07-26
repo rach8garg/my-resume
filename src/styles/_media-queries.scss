@@ -4,7 +4,123 @@
     .wrapper, .flip-container, .page-front, .page-back {
         width: 100%;
     }
-    .flip-container {
-    	perspective: 100%;
+}
+@media screen and (max-width: $break-small) {
+    html {
+        font-size: 14px;
+        background: #fff;
+    }
+    .left-section, .right-section,.section-projects,
+    .wrapper, .flip-container, .page-front, .page-back {
+        width: 100%;
+        height:auto;
+    }
+    .left-section{
+        .section-header{
+            &:after{
+                width: 80%;
+            }
+        }
+        .personal-info{
+            .list{
+                li:nth-child(1){
+                    margin-bottom: 0;
+                }
+                li:nth-child(2){
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+    .right-section{
+        .section-experience-education{
+            .org-list{
+                .org{
+                    .org-img{
+                        display: none;
+                    }
+                    .summary{
+                        margin-right: 5px;
+                    }
+                    .highlights{
+                        float: right;
+                        font-size: 0.8rem;
+                        margin-top: 10px;
+                        padding: 0 15px 0 15px;
+                        &:after, &:before{
+                            top: 7px;
+                        }
+                    }
+                }
+            }
+        }
+        .section-content{
+            padding: 10px 15px 0;
+        }
+        .content-box{
+            padding-top:10px;
+            &.section-achievements{
+                padding-bottom: 10px;
+            }
+            &.section-experience-education{
+
+            }
+        }
+        .section-header{
+            font-size: 0.7em;
+            height: 30px;
+            margin:10px auto 0;
+            span{
+                margin-left: 15px;
+            }
+            &:after{
+                left:15px;
+                width:300px;
+            }
+        }
+    }
+    .section-projects {
+        .project-detail{
+            .summary{
+                .name{
+                    float: none;
+                }
+                .duration{
+                    position: relative;
+                    top: -25px;
+                }
+            }
+        }
+        .others{
+            height:auto;
+            .summary{
+                width: 100%;
+                float: none;
+                padding: 20px 0;
+                .client{
+                    margin-top: 0;
+                }
+                .duration{
+                    position: relative;
+                    top: -20px;
+                }
+            }
+        }
+    }
+    .app-footer{
+        height:80px;
+        .updated{
+            margin:0;
+            width: 100%;
+            text-align: center;
+        }
+        .hashtags{
+            text-align: center;
+            width: 100%;
+            margin: 0;
+            .hashtag{
+                margin: 0 5px;
+            }
+        }
     }
 }

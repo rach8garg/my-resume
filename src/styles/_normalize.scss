@@ -11,6 +11,8 @@ body {
     font: 100% $font-stack;
     color: $color-grey-1;
     box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 a {

@@ -13,7 +13,7 @@
     <title>Rachit Garg | UI Developer | PixlBoy</title>
 </head>
 
-<body id="capture">
+<body>
     <div class="wrapper flip-container">
         <main class="main-content flipper">
             <div class="page-front">
@@ -23,7 +23,31 @@
                 </header>
                 <aside class="left-section pull-left">
                     <div class="profile-badge">
-                        <div class="cover-image"></div>
+                        <div class="cover-frame">
+                            <div class="windmill">
+                                <div class="windmill-base"></div>
+                                <div class="windmill-body"></div>
+                                <div class="windmill-wings wing1"></div>
+                                <div class="windmill-wings wing2"></div>
+                            </div>
+                            <div class="clouds">
+                                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="362px"
+                                height="331px" viewBox="0 0 762 331" enable-background="new 0 0 762 331" xml:space="preserve" class="cloud distant smaller">
+                                <path fill="#FFFFFF" d="M715.394,228h-16.595c0.79-5.219,1.201-10.562,1.201-16c0-58.542-47.458-106-106-106
+                                c-8.198,0-16.178,0.932-23.841,2.693C548.279,45.434,488.199,0,417.5,0c-84.827,0-154.374,65.401-160.98,148.529
+                                C245.15,143.684,232.639,141,219.5,141c-49.667,0-90.381,38.315-94.204,87H46.607C20.866,228,0,251.058,0,279.5
+                                S20.866,331,46.607,331h668.787C741.133,331,762,307.942,762,279.5S741.133,228,715.394,228z"/>
+                                </svg>
+                                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="362px"
+                                height="331px" viewBox="0 0 762 331" enable-background="new 0 0 762 331" xml:space="preserve" class="cloud small slow">
+                                <path fill="#FFFFFF" d="M715.394,228h-16.595c0.79-5.219,1.201-10.562,1.201-16c0-58.542-47.458-106-106-106
+                                c-8.198,0-16.178,0.932-23.841,2.693C548.279,45.434,488.199,0,417.5,0c-84.827,0-154.374,65.401-160.98,148.529
+                                C245.15,143.684,232.639,141,219.5,141c-49.667,0-90.381,38.315-94.204,87H46.607C20.866,228,0,251.058,0,279.5
+                                S20.866,331,46.607,331h668.787C741.133,331,762,307.942,762,279.5S741.133,228,715.394,228z"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <!-- <div class="cover-image"></div> -->
                         <div class="profile-image"></div>
                         <h5 class="name">Rachit Garg</h5>
                         <h6 class="title">User Interface Engineer</h6>
@@ -59,7 +83,7 @@
                                         <path d="M0 0h24v24H0z" fill="none"/>
                                     </svg>
                                 </label>
-                                <span class="pull-left">Bangalore, India</span>
+                                <span class="pull-left">Bengaluru, India</span>
                             </li>
                         </ul>
                     </div>
@@ -192,7 +216,18 @@
                                     </svg>
                                 </label>
                                 <span class="pull-left text">
-                                    <a href="http://www.pixlboy.com/" target="_blank">www.pixlboy.com</a>
+                                    <a href="http://www.pixlboy.com.s3-website.ap-south-1.amazonaws.com/resume.html" target="_blank">pixlboy.com/resume.html</a>
+                                </span>
+                            </li>
+                            <li class="md-svg">
+                                <label class="pull-left icon">
+                                    <svg fill="#ffffff" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0 0h24v24H0z" fill="none"/>
+                                        <path d="M20 2H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-8.5 7.5c0 .83-.67 1.5-1.5 1.5H9v2H7.5V7H10c.83 0 1.5.67 1.5 1.5v1zm5 2c0 .83-.67 1.5-1.5 1.5h-2.5V7H15c.83 0 1.5.67 1.5 1.5v3zm4-3H19v1h1.5V11H19v2h-1.5V7h3v1.5zM9 9.5h1v-1H9v1zM4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm10 5.5h1v-3h-1v3z"/>
+                                    </svg>
+                                </label>
+                                <span class="pull-left text">
+                                    <a href="http://www.pixlboy.com.s3-website.ap-south-1.amazonaws.com/resume.pdf" target="_blank">pixlboy.com/resume.pdf</a>
                                 </span>
                             </li>
                             <li class="svg">
@@ -304,8 +339,8 @@
                                     </div>
                                     <div class="highlights pull-left">
                                         <ul>
-                                            <li>Grade 12 Percentage - 76%</li>
-                                            <li>Grade 10 Percentage - 85%</li>
+                                            <li>Grade 12 - 76%</li>
+                                            <li>Grade 10 - 85%</li>
                                         </ul>
                                     </div>
                                 </li>
@@ -355,23 +390,25 @@
                                 <li class="item javascript-skill">Angular 1.x</li>
                                 <li class="item javascript-skill">Jasmine</li>
                                 <li class="item javascript-skill">Karma</li>
+                                <li class="item other-skill">Git</li>
                                 <li class="item other-skill">JSP</li>
+                                <li class="item javascript-skill">Handlebars</li>
                                 <li class="item javascript-skill">jQuery</li>
-                                <li class="item javascript-skill">Gulp</li>
+                                <li class="item other-skill">PHP</li>
                                 <li class="item javascript-skill">Require</li>
                                 <li class="item other-skill">Sencha Touch</li>
-                                <li class="item other-skill">PHP</li>
                                 <li class="item javascript-skill">Knockout</li>
                                 <li class="item javascript-skill">Raphael</li>
-                                <li class="item javascript-skill">Handlebars</li>
+                                <li class="item javascript-skill">Gulp</li>
                                 <li class="item javascript-skill">Bower</li>
+                                <li class="item other-skill">SVN</li>
+                                <li class="item html-skill">Foundation</li>
                                 <li class="item html-skill">HTML5</li>
                                 <li class="item html-skill">Bootstrap</li>
                                 <li class="item javascript-skill">Webpack</li>
-                                <li class="item other-skill">MVC</li>
                                 <li class="item css-skill">Photoshop</li>
                                 <li class="item css-skill">SVG</li>
-                                <li class="item html-skill">Foundation</li>
+                                <li class="item other-skill">MVC</li>
                                 <li class="item css-skill">CSS</li>
                                 <li class="item css-skill">SASS</li>
                                 <li class="item css-skill">Compass</li>
@@ -379,8 +416,7 @@
                                 <li class="item javascript-skill">NPM</li>
                                 <li class="item javascript-skill">React JS</li>
                                 <li class="item javascript-skill">ECMA6</li>
-                                <li class="item other-skill">Git</li>
-                                <li class="item other-skill">SVN</li>
+                                <li class="item javascript-skill">Lodash</li>
                             </ul>
                             <div class="skill-stats">
                                 <span class="javascript-skill" title="javascript">JavaScript</span>
@@ -430,7 +466,7 @@
                     </span>
                 </footer>
             </div>
-            <!-- <div class="page-back">
+            <div class="page-back">
                 <header class="app-header">
                     <span class="tab">PROJECTS</span>
                     <span class="flip-btn pull-right" id="flipToFront"></span>
@@ -660,7 +696,7 @@
                         <a href="javascript:void(0)" class="hashtag">#ReactJS</a>
                     </span>
                 </footer>
-            </div> -->
+            </div>
         </main>
     </div>
     <script type="text/javascript" src="/assets/app.bundle.js"></script>

@@ -1,40 +1,25 @@
 'use-strict';
 
-import html2canvas from 'html2canvas';
 import styles from "./styles/styles.scss";
 
     let rotation            = 0;
-    let altKey 				= 18;		//Used to save the screenshot of template
-    let captureId 			= "capture";
+    let downloadKeyCode		= 18;		//Used to save the screenshot of template
     let downloadId 			= "download";
-    let canvasId 			= "resumeTemplate";
     let flipToBack	   	    = "flipToBack";
     let flipToFront	   	    = "flipToFront";
-    let fileName 			= "Rachit_Garg_Web_Developer.png";
-    let downloadElm 		= document.getElementById(downloadId);
-    let captureElm 			= document.getElementById(captureId);
+    let fileName 			= "resume.pdf";
 
     let app = function(){};
 
     /*
-		Responsible for saving screenshot of current browser tab
+		Responsible for saving PDF version of HTML file
 	*/
-	app.convertToCanvas = (event) => {
-		html2canvas(captureElm, {
-			onrendered: (canvas) => {
-				canvas.setAttribute("id", canvasId);
-				document.body.appendChild(canvas);
-				downloadElm.setAttribute("href",document.getElementById(canvasId).toDataURL());
-				downloadElm.setAttribute("download", fileName);
-				downloadElm.click();
-				document.getElementById(canvasId).outerHTML = "";
-				delete document.getElementById(canvasId);
-			}
-		});
+	app.downloadPDF = (event) => {
+        window.open("http://www.pixlboy.com/resume.pdf", "_blank");
 	};
 
     var dates = document.getElementsByClassName("date-time");
-    dates[1].innerHTML = dates[0].innerHTML = "20-07-2017";
+    dates[1].innerHTML = dates[0].innerHTML = "26-07-2017";
 
     document.addEventListener("click", (event) => {
         if(event.target.id === flipToBack){
@@ -48,5 +33,5 @@ import styles from "./styles/styles.scss";
     });
 
     document.addEventListener("keyup", (event) => {
-        if ( event.which === altKey) app.convertToCanvas(event);
+        if ( event.which === downloadKeyCode) app.downloadPDF(event);
     });
