@@ -1,6 +1,6 @@
 .right-section {
     width: $width-right;
-    border-right: 1px solid $color-grey-3;
+    border-right: 1px solid $color-grey-4;
     height: $body-height;
 
     .content-box {
@@ -20,7 +20,7 @@
         span{
             position: relative;
             z-index: 100;
-            background: #fff;
+            background: $color-white-0;
             margin-left: 25px;
             padding-right: 15px;
         }
