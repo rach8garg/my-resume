@@ -39,8 +39,8 @@
 
         .profile-image {
             transition: .7s;
-            background: url("../images/profile-img.jpg") no-repeat -15px 0;
-            background-size: 115%;
+            background: url("../images/profile-img.jpg") no-repeat 0 0;
+            background-size: 100%;
             width: 140px;
             height: 140px;
             border-radius: 70px;
@@ -83,9 +83,10 @@
     .contact-info {
         @extend .section-body;
         padding-right: 0;
-        .svg{
+        .svg, .md-svg{
             .text{
                 line-height: 26px;
+                position: relative;
             }
         }
     }
@@ -172,41 +173,3 @@
         }
     }
 }
-// .stars, .twinkling, .clouds {
-//   position:absolute;
-//   top:0;
-//   left:0;
-//   right:0;
-//   bottom:0;
-//   display:block;
-// }
-//
-// .stars {
-//     background:#000 url("../images/stars.png") repeat top center;
-//     z-index:0;
-// }
-//
-// .twinkling{
-//     background:transparent url("../images/twinkling.png") repeat top center;
-//     z-index:1;
-//     animation:move-twink-back 200s linear infinite;
-// }
-//
-// .clouds{
-//     background:transparent url("../images/clouds.png") repeat top center;
-//     z-index:3;
-//     animation:move-clouds-back 200s linear infinite;
-//     background-size: 200%;
-// }
-// .night-sky{
-//     position: relative;
-//     height: 135px;
-// }
-// @keyframes move-twink-back {
-//     from {background-position:0 0;}
-//     to {background-position:-10000px 5000px;}
-// }
-// @keyframes move-clouds-back {
-//     from {background-position:0 0;}
-//     to {background-position:10000px 0;}
-// }

@@ -1,3 +1,20 @@
+/*--------------------- PDF fixes -----------------------*/
+.linker{
+    color: transparent !important;
+    width: 400px;
+    position: absolute;
+    z-index: 1;
+}
+.linker-text{
+    position: absolute;
+    color: #fff;
+    top: 2px;
+    z-index: 0;
+}
+/*--------------------------------------------*/
+.hide-me{
+    display:none;
+}
 .pull-left{
     float:left;
 }
