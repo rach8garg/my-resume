@@ -17,7 +17,9 @@ import styles from "./styles/styles.scss";
 	};
 
     var dates = document.getElementsByClassName("date-time");
-    dates[1].innerHTML = dates[0].innerHTML = "27-07-2017";
+    for(let i = 0; i < dates.length; i++){
+        dates[i].innerHTML = "20-09-2017";
+    };
 
     document.addEventListener("click", (event) => {
         if(event.target.id === flipToBack){

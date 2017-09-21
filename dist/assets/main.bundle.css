@@ -77,9 +77,9 @@ p {
     background: #fff;
     height: 1499px; }
   .flip-container .page-front {
-    transform: rotateY(180deg); }
-  .flip-container .page-back {
     transform: rotateY(0deg); }
+  .flip-container .page-back {
+    transform: rotateY(180deg); }
 
 .cover-frame {
   background: linear-gradient(#0077b8, #36b9ff);
@@ -278,6 +278,10 @@ p {
       height: 140px;
       background: url(/assets/8223acbb9edaddbeee60c22348ff973a.jpg) no-repeat;
       background-size: 100%; }
+      .left-section .profile-badge .cover-image.letter {
+        height: 303px;
+        background: url(/assets/72ecbecdfff30e4c67477d9fcb1bdf60.jpg) no-repeat 0 0;
+        background-size: 100%; }
     .left-section .profile-badge .profile-image {
       transition: .7s;
       background: url(/assets/c16bea7de431f423a628ce17e13d4e99.jpg) no-repeat 0 0;
@@ -300,6 +304,8 @@ p {
       margin: 90px 0 10px;
       text-align: center;
       color: #fff; }
+      .left-section .profile-badge .name.letter {
+        margin: 30px 0 10px; }
     .left-section .profile-badge .title {
       font-size: 1.3rem;
       margin: 0 0 10px;
@@ -501,6 +507,26 @@ p {
 
 .section-skills .extra {
   margin: 10px 0 5px; }
+
+.cover-letter .section-header {
+  margin-top: 30px; }
+  .cover-letter .section-header::after {
+    display: none; }
+  .cover-letter .section-header span {
+    margin-left: 45px; }
+
+.cover-letter .section-content {
+  padding: 10px 50px;
+  text-align: justify;
+  font-size: 1rem;
+  line-height: 1.4rem; }
+  .cover-letter .section-content .signature-image {
+    background: url(/assets/5d774e4c49799c0222426bfedfe4b614.png) no-repeat 0 0;
+    background-size: 100%;
+    width: 150px;
+    height: 136px;
+    margin: 15px 0 0;
+    display: inline-block; }
 
 .section-projects {
   border-right: 1px solid #b7b7b7;
