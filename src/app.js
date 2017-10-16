@@ -18,7 +18,7 @@ import styles from "./styles/styles.scss";
 
     var dates = document.getElementsByClassName("date-time");
     for(let i = 0; i < dates.length; i++){
-        dates[i].innerHTML = "20-09-2017";
+        dates[i].innerHTML = "17-10-2017";
     };
 
     document.addEventListener("click", (event) => {

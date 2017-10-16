@@ -106,15 +106,16 @@
             li{
                 padding:8px 15px;
                 &:nth-child(1){
-                    background: #424242;
-                    margin-bottom: 15px;
+                    background: #414141;
                 }
                 &:nth-child(2){
-                    background: #616161;
-                    margin-bottom: 15px;
+                    background: #515151;
                 }
                 &:nth-child(3){
-                    background: #757575;
+                    background: #616161;
+                }
+                &:nth-child(4){
+                    background: #717171;
                 }
             }
         }
