@@ -55,7 +55,7 @@ module.exports = function(params){
         },
         plugins: [
             new ExtractTextPlugin({
-              filename: '[name].bundle.css',
+              filename: 'app.bundle.css',
               allChunks: true,
             }),
         ],
