@@ -88,23 +88,23 @@
 // .left-section {
 //     .anim-frame {
 //         .cloud {
-//              &.small {
-//         			margin: 0 200px 0 0;
-//         		}
-//         		&.smaller {
-//         			margin: -10px 230px 0 0;
-//         		}
+//             &.small {
+//         		margin: -90px -60px 0 0;
+//         	}
+//     		&.smaller {
+//     			margin: -120px 230px 0 0;
+//     		}
 //         }
 //     }
 // }
 // .wrapper{
 //     &.flip-container{
 //         .page-front{
-//             display: block;
+//             display: none;
 //         }
 //         .page-back{
 //             transform: rotateY(0);
-//             display: none;
+//             display: block;
 //         }
 //     }
 // }
