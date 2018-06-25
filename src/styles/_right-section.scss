@@ -1,15 +1,12 @@
 .right-section {
-    width: $width-right;
     border-right: 1px solid $color-grey-4;
-    height: $body-height;
-
     .content-box {
         margin: 0;
         padding: 16px 0 0 0;
     }
 
     .section-header {
-        color: #484848;
+        color: $color-grey-3;
         font-size: 1em;
         margin: 10px auto;
         height: 40px;
@@ -20,7 +17,7 @@
         span{
             position: relative;
             z-index: 100;
-            background: $color-white-0;
+            background: $color-white;
             margin-left: 25px;
             padding-right: 15px;
         }

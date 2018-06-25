@@ -1,43 +1,49 @@
 /*==========================Media Queries=====================*/
 
 @media screen and (max-width: $break-medium) {
-    .flip-container{
-        width: 100%;
-        height:auto;
-        .page-front, .page-back{
-            width: 100%;
-            height:auto;
-        }
-    }
     .wrapper{
         height:auto;
         width: 100%;
+        &.flip-container{
+            width: 100%;
+            height:auto;
+            .page-front, .page-back{
+                width: 100%;
+                height:auto;
+            }
+        }
     }
 }
+
 @media screen and (max-width: $break-small) {
     html {
         font-size: 14px;
-        background: #fff;
+        background: $color-white;
     }
-    .flip-container{
-        width: 100%;
-        height:auto;
-        .page-front, .page-back{
+    .wrapper{
+        .main-content{
+            .left-section, .right-section, .section-projects{
+                width: 100%;
+                height:auto;
+            }
+        }
+        &.flip-container{
             width: 100%;
             height:auto;
-        }
-        .page-front {
-            &.hidden{
-                .section-achievements, .section-skills{
-                    display: none;
+            .page-front, .page-back{
+                width: 100%;
+                height:auto;
+            }
+            .page-front {
+                &.hidden{
+                    .section-achievements, .section-skills{
+                        display: none;
+                    }
                 }
             }
         }
     }
-    .left-section, .right-section, .section-projects, .wrapper {
-        width: 100%;
-        height:auto;
-    }
+
     .left-section{
         .section-header{
             &:after{
@@ -55,6 +61,7 @@
             }
         }
     }
+
     .right-section{
         .section-experience-education{
             .org-list{
@@ -101,14 +108,24 @@
     }
     .section-projects {
         .project-detail{
-            padding: 25px 20px 20px;
+            padding: 15px 20px 14px;
             .summary{
                 .name{
                     float: none;
                 }
+                .client {
+                    margin-top: 0;
+                }
                 .duration{
                     position: relative;
                     top: -25px;
+                }
+            }
+            .description {
+                .list {
+                    li {
+                        margin: 6px 20px;
+                    }
                 }
             }
         }
@@ -117,7 +134,7 @@
             .summary{
                 width: 100%;
                 float: none;
-                padding: 20px 0;
+                padding: 15px 0;
                 .client{
                     margin-top: 0;
                 }
@@ -129,7 +146,7 @@
         }
     }
     .app-footer{
-        height:80px;
+        height:120px;
         .updated{
             margin:0;
             width: 100%;
@@ -142,6 +159,9 @@
             .hashtag{
                 margin: 0 5px;
             }
+        }
+        .flip-btn{
+            width: 100%;
         }
     }
 }

@@ -3,37 +3,42 @@
 import styles from "./styles/styles.scss";
 
     let rotation            = 0;
-    let downloadKeyCode		= 18;		//Used to save the screenshot of template
-    let flipToBack	   	    = "flipToBack";
-    let flipToFront	   	    = "flipToFront";
+    const downloadKeyCode	= 18; //alt Key
+    const PDF_LINK          = 'http://www.pixlboy.com./docs/rach8garg.pdf';
 
-    let app = function(){};
+    class App {
 
-    /*
-		Responsible for saving PDF version of HTML file
-	*/
-	app.downloadPDF = (event) => {
-        window.open("http://www.pixlboy.com.s3-website.ap-south-1.amazonaws.com/rach8garg.pdf", "_blank");
-	};
+        /*
+    		Responsible for saving PDF version of HTML file
+    	*/
+        downloadPDF(event){
+            window.open(PDF_LINK, "_blank");
+    	};
 
-    var dates = document.getElementsByClassName("date-time");
-    for(let i = 0; i < dates.length; i++){
-        dates[i].innerHTML = "17-10-2017";
-    };
+        setDates(date){
+            let dates = document.getElementsByClassName("date-time");
+            for(let item of dates){
+                item.innerHTML = date || 'n/a';
+            };
+        }
+    }
 
     document.addEventListener("click", (event) => {
-        if(event.target.id === flipToBack){
-            rotation = 180;
-            document.querySelector(".flipper").style.transform = `rotateY(${rotation}deg)`;
+        if(event.target.className.includes('flip-back')){
+            rotation = -180;
             document.querySelector(".page-front").className += " hidden";
         }
-        if(event.target.id === flipToFront){
+        if(event.target.className.includes('flip-front')){
             rotation = 0;
-            document.querySelector(".flipper").style.transform = `rotateY(${rotation}deg)`;
             document.querySelector(".page-front").className = "page-front";
         }
+        document.querySelector(".flipper").style.transform = `rotateY(${rotation}deg)`;
     });
 
     document.addEventListener("keyup", (event) => {
         if ( event.which === downloadKeyCode) app.downloadPDF(event);
     });
+
+    let app = new App();
+
+    app.setDates('22-06-2018');

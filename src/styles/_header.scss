@@ -2,7 +2,7 @@
     height: $header-footer-height;
     width: 100%;
     background: $color-grey-3;
-    color: $color-white-0;
+    color: $color-white;
     .tab{
         border-bottom: 4px solid $color-blue-3;
         text-transform: uppercase;
@@ -14,16 +14,6 @@
         font-size: 1.1rem;
     }
     .flip-btn{
-        background: url("../images/arrow_forward.svg") no-repeat $color-blue-3;
-        background-position: 6px 6px;
-        background-size: 30px 30px;
-        width: 40px;
-        height: 40px;
-        cursor: pointer;
-        display: inline-block;
-        transition:0.7s;
-        &:hover{
-            transform: rotateY(180deg);
-        }
+        @extend .flip-btn;
     }
 }

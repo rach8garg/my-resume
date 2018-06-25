@@ -25,7 +25,7 @@ module.exports = function(params){
                         {
                             loader: 'babel-loader',
                             options: {
-                                presets: ['es2015']
+                                presets: ['env']
                             }
                         }
                     ]
@@ -47,7 +47,7 @@ module.exports = function(params){
                     test: /\.(gif|png|jpe?g)$/i,
                     exclude: [/node_modules/],
                     loaders: [
-                        'file-loader?hash=sha512&digest=hex&name=[hash].[ext]',
+                        'file-loader?name=images/hash=sha512&digest=hex&name=[hash].[ext]',
                         'image-webpack-loader'
                     ]
                 }
