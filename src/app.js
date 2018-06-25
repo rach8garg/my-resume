@@ -41,4 +41,4 @@ import styles from "./styles/styles.scss";
 
     let app = new App();
 
-    app.setDates('22-06-2018');
+    app.setDates('25-06-2018');
