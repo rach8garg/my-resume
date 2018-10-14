@@ -49,17 +49,41 @@
             }
         }
     }
-    .others{
-        overflow: hidden;
-        border-bottom: 0;
-        height: 200px;
-        h3{
-            margin:0 0 10px 0;
+    // .others{
+    //     overflow: hidden;
+    //     border-bottom: 0;
+    //     height: 200px;
+    //     h3{
+    //         margin:0 0 10px 0;
+    //     }
+    //     .summary{
+    //         width: 50%;
+    //         float: left;
+    //         padding:5px 80px 5px 10px;
+    //     }
+    // }
+    .bullet-list{
+        margin: 0 0 20px;
+        .item{
+            @extend .bullet;
         }
-        .summary{
-            width: 50%;
-            float: left;
-            padding:5px 80px 5px 10px;
+    }
+    .javascript-skill{
+        background: $color-blue-1;
+    }
+    .html-skill{
+        background: $color-blue-3;
+    }
+    .css-skill{
+        background: $color-blue-5;
+    }
+    .other-skill{
+        background: $color-grey-2;
+    }
+    .list {
+        li {
+            list-style-type: square;
+            margin: 10px 20px;
         }
     }
 }

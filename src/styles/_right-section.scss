@@ -1,8 +1,9 @@
 .right-section {
     border-right: 1px solid $color-grey-4;
+
     .content-box {
         margin: 0;
-        padding: 16px 0 0 0;
+        padding: 10px 0 0;
     }
 
     .section-header {
@@ -14,19 +15,23 @@
         width: 70%;
         position: relative;
         float: left;
-        span{
+
+        .heading {
             position: relative;
             z-index: 100;
             background: $color-white;
             margin-left: 25px;
             padding-right: 15px;
+            text-transform: uppercase;
         }
-        &::first-letter{
+
+        &::first-letter {
             font-size: 2em;
         }
-        &::after{
+
+        &::after {
             content: "";
-            border:1px solid $color-grey-1;
+            border: 1px solid $color-grey-1;
             width: 60%;
             font-size: 0;
             position: absolute;
@@ -37,8 +42,8 @@
     }
 
     .section-content {
-        padding: 10px 25px;
-        font-size: .9375em;
+        padding: 5px 25px;
+        font-size: 0.9375em;
     }
 
     .list {

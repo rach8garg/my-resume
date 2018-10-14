@@ -1,6 +1,6 @@
 'use-strict';
 
-import styles from "./styles/styles.scss";
+require("./styles/styles.scss");
 
     let rotation            = 0;
     const downloadKeyCode	= 18; //alt Key
@@ -23,17 +23,17 @@ import styles from "./styles/styles.scss";
         }
     }
 
-    document.addEventListener("click", (event) => {
-        if(event.target.className.includes('flip-back')){
-            rotation = -180;
-            document.querySelector(".page-front").className += " hidden";
-        }
-        if(event.target.className.includes('flip-front')){
-            rotation = 0;
-            document.querySelector(".page-front").className = "page-front";
-        }
-        document.querySelector(".flipper").style.transform = `rotateY(${rotation}deg)`;
-    });
+    // document.addEventListener("click", (event) => {
+    //     if(event.target.className.includes('flip-back')){
+    //         rotation = -180;
+    //         document.querySelector(".page-front").className += " hidden";
+    //     }
+    //     if(event.target.className.includes('flip-front')){
+    //         rotation = 0;
+    //         document.querySelector(".page-front").className = "page-front";
+    //     }
+    //     document.querySelector(".flipper").style.transform = `rotateY(${rotation}deg)`;
+    // });
 
     document.addEventListener("keyup", (event) => {
         if ( event.which === downloadKeyCode) app.downloadPDF(event);
@@ -41,4 +41,4 @@ import styles from "./styles/styles.scss";
 
     let app = new App();
 
-    app.setDates('25-06-2018');
+    app.setDates('12-10-2018');
