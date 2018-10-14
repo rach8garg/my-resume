@@ -3,7 +3,19 @@
     fill: $color-white;
 }
 .icon-blue{
-    fill: $color-blue-5;
+    fill: $color-blue-3;
+}
+.icon-red{
+    fill: $color-red-1;
+}
+.icon-orange{
+    fill: $color-orange-1;
+}
+.icon-green{
+    fill: $color-green-1;
+}
+.icon-yellow{
+    fill: $color-yellow-1;
 }
 .icon-s24{
     width: 24px;
@@ -40,14 +52,14 @@
     text-align: left;
 }
 .bullet{
-    height: 27px;
-    border-radius: 25px;
-    color: $color-white;
-    font-size: 0.9rem;
+    height: 25px;
+    border-radius: 20px;
+    font-size: 0.8rem;
     display: inline-block;
-    padding: 5px 14px;
-    margin: 10px 10px 0 0;
-    line-height: 20px;
+    padding: 0 13px;
+    margin: 2px 6px 2px 0;
+    line-height: 28px;
+    color: $color-white;
 }
 .flip-btn{
     display: inline-block;

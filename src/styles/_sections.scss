@@ -3,6 +3,7 @@
         .org {
             margin: 10px 0 15px;
             overflow: hidden;
+            height: 64px;
             .org-img {
                 width: 60px;
                 height: 60px;
@@ -12,6 +13,7 @@
                 background-color: $color-grey-2;
                 color: $color-white;
                 float: left;
+                box-shadow: 1px 1px 0px 1px $color-grey-8;
             }
 
             .summary {
@@ -79,34 +81,50 @@
         }
         .javascript-skill{
             width:50%;
+            background: $color-blue-1;
         }
         .html-skill{
             width:20%;
+            background: $color-blue-3;
         }
         .css-skill{
             width:20%;
+            background: $color-blue-5;
         }
         .other-skill{
             width:10%;
+            background: $color-grey-2;
         }
     }
-    .bullet-list{
+    .skill-list{
         margin: 0 0 20px;
-        .item{
-            @extend .bullet;
+        > li{
+            display: flex;
+            margin: 8px 0;
         }
-    }
-    .javascript-skill{
-        background: $color-blue-1;
-    }
-    .html-skill{
-        background: $color-blue-3;
-    }
-    .css-skill{
-        background: $color-blue-5;
-    }
-    .other-skill{
-        background: $color-grey-2;
+        ol{
+            flex: 4;
+            padding: 0 0 0 20px;
+        }
+        strong{
+            flex: 2;
+            max-width: 170px;
+            text-transform: capitalize;
+        }
+        .item{
+            display: inline-block;
+            float: left;
+            &:after{
+                content: "|";
+                margin: 0 6px;
+                font-weight: 700;
+            }
+            &:last-of-type{
+                &:after{
+                    content: ""
+                }
+            }
+        }
     }
     .extra{
         margin:10px 0 5px;

@@ -25,7 +25,7 @@ module.exports = function(params){
                         {
                             loader: 'babel-loader',
                             options: {
-                                presets: ['env']
+                                presets: ['@babel/env']
                             }
                         }
                     ]
