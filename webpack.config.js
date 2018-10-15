@@ -8,9 +8,9 @@ module.exports = function(params){
         context: path.resolve( __dirname, './src'),     // __dirname refers to the directory where this webpack.config.js lives
         entry: './app.js',      //This can take multiple inputs in form of an array
         output: {
-            path: path.resolve(__dirname, './dist/assets/'),    // __dirname refers to the directory where this webpack.config.js lives
+            path: path.resolve(__dirname, './dist'),    // __dirname refers to the directory where this webpack.config.js lives
             filename: 'app.bundle.js',
-            publicPath: '/assets/'
+            publicPath: '/'
         },
         watch: true,
         module: {
@@ -64,7 +64,7 @@ module.exports = function(params){
             extensions: [ '.js', '.scss']
         },
         devServer : {
-            contentBase: path.resolve(__dirname, './src'),  //specify the path from which dev server should serve the contents
+            contentBase: path.resolve(__dirname, './'),  //specify the path from which dev server should serve the contents
             inline :  true,      //to run out of IFRAME, default it runs in iframe
             stats : "errors-only",    //to output only the errors, default it outputs everything and makes log huge
             port : 8888
