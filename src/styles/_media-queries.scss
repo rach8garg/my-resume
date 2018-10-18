@@ -10,6 +10,7 @@
             .page-front, .page-back{
                 width: 100%;
                 height:auto;
+                margin: 0 0 10px 0;
             }
         }
     }
@@ -33,6 +34,7 @@
             .page-front, .page-back{
                 width: 100%;
                 height:auto;
+                margin: 0 0 10px 0;
             }
             .page-front {
                 &.hidden{
@@ -122,6 +124,9 @@
                 }
             }
             .description {
+                .intro {
+                    margin: 0 0 18px 0;
+                }
                 .list {
                     li {
                         margin: 6px 20px;
@@ -144,9 +149,15 @@
                 }
             }
         }
+        .bullet-list{
+            margin: 0;
+        }
+        .section-header{
+            margin-top:0;
+        }
     }
     .app-footer{
-        height:120px;
+        height: 90px;
         .updated{
             margin:0;
             width: 100%;

@@ -1,0 +1,76 @@
+<!--
+	Resume 1.0
+	Author: Rachit Garg <rachigarg@gmail.com>
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <% include ../partials/_head.ejs %>
+</head>
+<body>
+    <div class="wrapper flip-container">
+        <main class="main-content flipper">
+            <div class="page-front">
+                <header class="app-header">
+                    <span class="tab">Resume</span>
+                    <span class="flip-btn pull-right flip-back">1</span>
+                </header>
+                <aside class="left-section pull-left">
+                    <div class="profile-badge">
+                        <% include ../partials/_cloudanim.ejs %>
+                        <div class="profile-image"></div>
+                        <h5 class="name">Rachit Garg</h5>
+                        <h6 class="title">User Interface Engineer</h6>
+                    </div>
+                    <div class="intro">
+                        <% include ../partials/_intro.ejs %>
+                    </div>
+                    <div class="personal-info">
+                        <% include ../partials/_personalinfo.ejs %>
+                    </div>
+                    <div class="interests-info clear-all">
+                        <% include ../partials/_interestinfo.ejs %>
+                    </div>
+                    <div class="contact-info clear-all">
+                        <% include ../partials/_contactinfo.ejs %>
+                    </div>
+                </aside>
+                <article class="right-section pull-right">
+                    <section class="section-experience-education content-box">
+                        <% include ../partials/_experience.ejs %>
+                    </section>
+                    <section class="section-responsibilities content-box">
+                        <% include ../partials/_responsibilities.ejs %>
+                    </section>
+                    <section class="section-responsibilities content-box">
+                        <% include ../partials/_weekwork.ejs %>
+                    </section>
+                    <section class="section-skills content-box">
+                        <% include ../partials/_technologies.ejs %>
+                    </section>
+                </article>
+                <div class="clear-all"></div>
+                <% include ../partials/_footer.ejs %>
+            </div>
+            <div class="page-back">
+                <header class="app-header">
+                    <span class="tab">PROJECTS</span>
+                    <span class="flip-btn pull-right flip-front">2</span>
+                </header>
+                <article>
+                    <section class="section-projects content-box">
+                        <div class="section-content">
+                            <% include ../partials/_projects.ejs %>
+                        </div>
+                        <div class="section-content">
+                            <% include ../partials/_achievements.ejs %>
+                        </div>
+                    </section>
+                </article>
+                <% include ../partials/_footer.ejs %>
+            </div>
+        </main>
+    </div>
+    <script type="text/javascript" src="app.bundle.js"></script>
+</body>
+</html>

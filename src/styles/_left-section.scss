@@ -121,6 +121,9 @@
                 &:nth-child(4){
                     background: $color-grey-8;
                 }
+                span {
+                    line-height: 1.8rem;
+                }
             }
         }
     }
@@ -146,7 +149,7 @@
                 }
                 .name{
                     display: block;
-                    font-size: .6rem;
+                    font-size: .7rem;
                     line-height: 20px;
                 }
                 .icons{

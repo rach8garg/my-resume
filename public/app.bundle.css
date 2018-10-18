@@ -86,17 +86,19 @@ p {
   max-width: 1060px;
   margin: 0 auto;
   height: 1499px; }
-  .wrapper .main-content .left-section {
-    width: 320px;
-    height: 1419px; }
-  .wrapper .main-content .right-section {
-    width: calc(1060px - 320px);
-    height: 1419px; }
-  .wrapper .main-content .section-projects {
-    height: 1419px; }
-  .wrapper .main-content .page-back, .wrapper .main-content .page-front {
-    margin: 10px 0;
-    background: #ffffff; }
+  .wrapper .main-content {
+    height: 1499px; }
+    .wrapper .main-content .left-section {
+      width: 320px;
+      height: 1419px; }
+    .wrapper .main-content .right-section {
+      width: calc(1060px - 320px);
+      height: 1419px; }
+    .wrapper .main-content .section-projects {
+      height: 1419px; }
+    .wrapper .main-content .page-back, .wrapper .main-content .page-front {
+      margin: 10px 0;
+      background: #ffffff; }
   .wrapper.flip-container {
     width: 1060px; }
     .wrapper.flip-container .flipper {
@@ -161,11 +163,11 @@ p {
     padding: 0 0 10px; }
     .left-section .profile-badge .cover-image {
       height: 303px;
-      background: url(/a5b73d1363618b41cb35423413bed7c1.jpg) no-repeat 0 0;
+      background: url(/images/cover-self.jpg) no-repeat 0 0;
       background-size: 100%; }
     .left-section .profile-badge .profile-image {
       transition: .7s;
-      background: url(/063bb907743c38abfde9847ac9daf930.jpg) no-repeat 0 0;
+      background: url(/images/profile-img-bw.jpg) no-repeat 0 0;
       background-size: 100%;
       width: 140px;
       height: 140px;
@@ -179,9 +181,9 @@ p {
       border: 3px solid #313131; }
       .left-section .profile-badge .profile-image:before {
         content: '';
-        background-image: url(/5a458b382831399ac09947cd5e1efbb1.jpg); }
+        background-image: url(/images/profile-img.jpg); }
       .left-section .profile-badge .profile-image:hover {
-        background-image: url(/5a458b382831399ac09947cd5e1efbb1.jpg); }
+        background-image: url(/images/profile-img.jpg); }
     .left-section .profile-badge .name {
       font-size: 1.6rem;
       margin: 90px 0 10px;
@@ -226,6 +228,8 @@ p {
         background: #616161; }
       .left-section .personal-info .list li:nth-child(4) {
         background: #717171; }
+      .left-section .personal-info .list li span {
+        line-height: 1.8rem; }
   .left-section .interests-info {
     padding-right: 0; }
     .left-section .interests-info .list {
@@ -243,7 +247,7 @@ p {
           color: #0277BD; }
         .left-section .interests-info .list li .name {
           display: block;
-          font-size: .6rem;
+          font-size: .7rem;
           line-height: 20px; }
         .left-section .interests-info .list li .icons {
           transition: .7s;
@@ -452,20 +456,19 @@ p {
   font-size: 0.7rem;
   text-align: center;
   color: #ffffff;
-  width: 98%;
   overflow: hidden; }
   .section-skills .skill-stats .skill-bar {
     height: 18px;
     line-height: 19px;
     float: left; }
   .section-skills .skill-stats .javascript-skill {
-    width: 50%;
+    width: 60%;
     background: #01579B; }
   .section-skills .skill-stats .html-skill {
-    width: 20%;
+    width: 15%;
     background: #0288D1; }
   .section-skills .skill-stats .css-skill {
-    width: 20%;
+    width: 15%;
     background: #03A9F4; }
   .section-skills .skill-stats .other-skill {
     width: 10%;
@@ -475,7 +478,7 @@ p {
   margin: 0 0 20px; }
   .section-skills .skill-list > li {
     display: flex;
-    margin: 8px 0; }
+    margin: 10px 0; }
   .section-skills .skill-list ol {
     flex: 4;
     padding: 0 0 0 20px; }
@@ -509,7 +512,7 @@ p {
   font-size: 1rem;
   line-height: 1.4rem; }
   .cover-letter .section-content .signature-image {
-    background: url(/d706ef5a11df5fbd813429d4a89d27b3.png) no-repeat 0 0;
+    background: url(/images/signature-img.png) no-repeat 0 0;
     background-size: 100%;
     width: 150px;
     height: 136px;
@@ -623,8 +626,8 @@ p {
   font-size: 0.8rem;
   display: inline-block;
   padding: 0 13px;
-  margin: 2px 6px 2px 0;
-  line-height: 28px;
+  margin: 2px 5px 2px 0;
+  line-height: 27px;
   color: #ffffff; }
 
 .flip-btn, .app-header .flip-btn, .app-footer .flip-btn {
@@ -666,7 +669,8 @@ p {
       height: auto; }
       .wrapper.flip-container .page-front, .wrapper.flip-container .page-back {
         width: 100%;
-        height: auto; } }
+        height: auto;
+        margin: 0 0 10px 0; } }
 
 @media screen and (max-width: 799px) {
   html {
@@ -680,7 +684,8 @@ p {
     height: auto; }
     .wrapper.flip-container .page-front, .wrapper.flip-container .page-back {
       width: 100%;
-      height: auto; }
+      height: auto;
+      margin: 0 0 10px 0; }
     .wrapper.flip-container .page-front.hidden .section-achievements, .wrapper.flip-container .page-front.hidden .section-skills {
       display: none; }
   .left-section .section-header:after {
@@ -724,6 +729,8 @@ p {
     .section-projects .project-detail .summary .duration {
       position: relative;
       top: -25px; }
+    .section-projects .project-detail .description .intro {
+      margin: 0 0 18px 0; }
     .section-projects .project-detail .description .list li {
       margin: 6px 20px; }
   .section-projects .others {
@@ -737,8 +744,12 @@ p {
       .section-projects .others .summary .duration {
         position: relative;
         top: -20px; }
+  .section-projects .bullet-list {
+    margin: 0; }
+  .section-projects .section-header {
+    margin-top: 0; }
   .app-footer {
-    height: 120px; }
+    height: 90px; }
     .app-footer .updated {
       margin: 0;
       width: 100%;
