@@ -51,6 +51,18 @@
 .text-right{
     text-align: left;
 }
+.javascript-skill{
+    background: $color-blue-1;
+}
+.html-skill{
+    background: $color-blue-3;
+}
+.css-skill{
+    background: $color-blue-5;
+}
+.other-skill{
+    background: $color-grey-2;
+}
 .bullet{
     height: 25px;
     border-radius: 20px;
@@ -97,15 +109,30 @@
 
 /*--------------------- PDF fixes -------------------------------*/
 
-// .left-section {
-//     .anim-frame {
-//         .cloud {
-//             &.small {
-//         		margin: -90px -60px 0 0;
-//         	}
-//     		&.smaller {
-//     			margin: -120px 230px 0 0;
-//     		}
+// .wrapper {
+//     .main-content {
+//         .page-back, .page-front {
+//             margin: 0;
+//         }
+//     }
+//     .left-section {
+//         .anim-frame {
+//             .cloud {
+//                 animation-name: none;
+//                 &.small {
+//             		margin: -20px -20px 0 0;
+//             	}
+//         		&.smaller {
+//         			margin: -10px 215px 0 0;
+//         		}
+//             }
+//         }
+//         .windmill{
+//             .windmill-wings{
+//                 &.wing1, &.wing2{
+//                     animation-name: none;
+//                 }
+//             }
 //         }
 //     }
 // }

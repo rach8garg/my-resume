@@ -36,12 +36,8 @@
                 height:auto;
                 margin: 0 0 10px 0;
             }
-            .page-front {
-                &.hidden{
-                    .section-achievements, .section-skills{
-                        display: none;
-                    }
-                }
+            .page-back{
+                margin: 0;
             }
         }
     }
@@ -83,6 +79,16 @@
                             top: 7px;
                         }
                     }
+                }
+            }
+        }
+        .section-skills{
+            .skill-list{
+                strong, ol{
+                    float: none;
+                }
+                ol{
+                    padding: 5px 0 0 0px;
                 }
             }
         }
@@ -151,9 +157,6 @@
         }
         .bullet-list{
             margin: 0;
-        }
-        .section-header{
-            margin-top:0;
         }
     }
     .app-footer{

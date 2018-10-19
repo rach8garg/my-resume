@@ -1,5 +1,5 @@
 /*
-	Resume 1.0
+	Resume 2.0
 	Author: Rachit Garg <rachigarg@gmail.com>
 */
 @font-face {
@@ -403,7 +403,7 @@ p {
 .section-experience-education .org-list .org {
   margin: 10px 0 15px;
   overflow: hidden;
-  height: 64px; }
+  min-height: 64px; }
   .section-experience-education .org-list .org .org-img {
     width: 60px;
     height: 60px;
@@ -462,30 +462,26 @@ p {
     line-height: 19px;
     float: left; }
   .section-skills .skill-stats .javascript-skill {
-    width: 60%;
-    background: #01579B; }
+    width: 60%; }
   .section-skills .skill-stats .html-skill {
-    width: 15%;
-    background: #0288D1; }
+    width: 15%; }
   .section-skills .skill-stats .css-skill {
-    width: 15%;
-    background: #03A9F4; }
+    width: 15%; }
   .section-skills .skill-stats .other-skill {
-    width: 10%;
-    background: #adadad; }
+    width: 10%; }
 
 .section-skills .skill-list {
   margin: 0 0 20px; }
   .section-skills .skill-list > li {
-    display: flex;
+    overflow: hidden;
     margin: 10px 0; }
   .section-skills .skill-list ol {
-    flex: 4;
+    float: left;
     padding: 0 0 0 20px; }
   .section-skills .skill-list strong {
-    flex: 2;
-    max-width: 170px;
-    text-transform: capitalize; }
+    width: 170px;
+    text-transform: capitalize;
+    float: left; }
   .section-skills .skill-list .item {
     display: inline-block;
     float: left; }
@@ -522,7 +518,7 @@ p {
 .section-projects {
   border-right: 1px solid #b7b7b7; }
   .section-projects .project-detail {
-    padding: 15px 35px 14px;
+    padding: 20px 35px 14px;
     border-bottom: 1px solid #adadad;
     border-left: 4px solid #1f1f1f; }
     .section-projects .project-detail .summary .name {
@@ -555,17 +551,12 @@ p {
         margin: 6px 35px; }
   .section-projects .bullet-list {
     margin: 0 0 20px; }
-  .section-projects .javascript-skill {
-    background: #01579B; }
-  .section-projects .html-skill {
-    background: #0288D1; }
-  .section-projects .css-skill {
-    background: #03A9F4; }
-  .section-projects .other-skill {
-    background: #adadad; }
   .section-projects .list li {
     list-style-type: square;
     margin: 10px 20px; }
+  .section-projects h2.section-header {
+    margin-top: 6px;
+    font-size: 1.4rem; }
 
 /*--------------------------------------------*/
 .icon-white {
@@ -619,6 +610,18 @@ p {
 
 .text-right {
   text-align: left; }
+
+.javascript-skill {
+  background: #01579B; }
+
+.html-skill {
+  background: #0288D1; }
+
+.css-skill {
+  background: #03A9F4; }
+
+.other-skill {
+  background: #adadad; }
 
 .bullet, .section-projects .bullet-list .item {
   height: 25px;
@@ -686,8 +689,8 @@ p {
       width: 100%;
       height: auto;
       margin: 0 0 10px 0; }
-    .wrapper.flip-container .page-front.hidden .section-achievements, .wrapper.flip-container .page-front.hidden .section-skills {
-      display: none; }
+    .wrapper.flip-container .page-back {
+      margin: 0; }
   .left-section .section-header:after {
     width: 80%; }
   .left-section .personal-info .list li:nth-child(1) {
@@ -705,6 +708,10 @@ p {
     padding: 0 15px 0 15px; }
     .right-section .section-experience-education .org-list .org .highlights:after, .right-section .section-experience-education .org-list .org .highlights:before {
       top: 7px; }
+  .right-section .section-skills .skill-list strong, .right-section .section-skills .skill-list ol {
+    float: none; }
+  .right-section .section-skills .skill-list ol {
+    padding: 5px 0 0 0px; }
   .right-section .section-content {
     padding: 10px 15px 0; }
   .right-section .content-box {
@@ -746,8 +753,6 @@ p {
         top: -20px; }
   .section-projects .bullet-list {
     margin: 0; }
-  .section-projects .section-header {
-    margin-top: 0; }
   .app-footer {
     height: 90px; }
     .app-footer .updated {
