@@ -1,7 +1,7 @@
 .section-projects {
     border-right: 1px solid $color-grey-4;
     .project-detail {
-        padding: 15px 35px 14px;
+        padding: 20px 35px 14px;
         border-bottom: 1px solid $color-grey-2;
         border-left: 4px solid $color-grey-3;
 
@@ -49,41 +49,20 @@
             }
         }
     }
-    // .others{
-    //     overflow: hidden;
-    //     border-bottom: 0;
-    //     height: 200px;
-    //     h3{
-    //         margin:0 0 10px 0;
-    //     }
-    //     .summary{
-    //         width: 50%;
-    //         float: left;
-    //         padding:5px 80px 5px 10px;
-    //     }
-    // }
     .bullet-list{
         margin: 0 0 20px;
         .item{
             @extend .bullet;
         }
     }
-    .javascript-skill{
-        background: $color-blue-1;
-    }
-    .html-skill{
-        background: $color-blue-3;
-    }
-    .css-skill{
-        background: $color-blue-5;
-    }
-    .other-skill{
-        background: $color-grey-2;
-    }
     .list {
         li {
             list-style-type: square;
             margin: 10px 20px;
         }
+    }
+    h2.section-header{
+        margin-top: 6px;
+        font-size: 1.4rem;
     }
 }
