@@ -403,7 +403,8 @@ p {
 .section-experience-education .org-list .org {
   margin: 10px 0 15px;
   overflow: hidden;
-  min-height: 64px; }
+  min-height: 64px;
+  width: 100%; }
   .section-experience-education .org-list .org .org-img {
     width: 60px;
     height: 60px;
@@ -426,7 +427,8 @@ p {
       font-weight: 400; }
     .section-experience-education .org-list .org .summary .position {
       display: block;
-      margin-bottom: 5px; }
+      margin-bottom: 5px;
+      font-weight: 700; }
     .section-experience-education .org-list .org .summary .datetime {
       font-size: .8725em; }
   .section-experience-education .org-list .org .highlights {
@@ -456,7 +458,8 @@ p {
   font-size: 0.7rem;
   text-align: center;
   color: #ffffff;
-  overflow: hidden; }
+  overflow: hidden;
+  width: 99%; }
   .section-skills .skill-stats .skill-bar {
     height: 18px;
     line-height: 19px;
@@ -479,9 +482,10 @@ p {
     float: left;
     padding: 0 0 0 20px; }
   .section-skills .skill-list strong {
-    width: 170px;
+    width: 165px;
     text-transform: capitalize;
-    float: left; }
+    float: left;
+    font-weight: 700; }
   .section-skills .skill-list .item {
     display: inline-block;
     float: left; }
@@ -661,7 +665,6 @@ p {
     width: 20px;
     height: 20px; }
 
-/*--------------------- PDF fixes -------------------------------*/
 /*==========================Media Queries=====================*/
 @media screen and (max-width: 991px) {
   .wrapper {

@@ -6,7 +6,11 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 module.exports = function(params){
     var webpackConfig = {
         context: path.resolve( __dirname, './src'),         // __dirname refers to the directory where this webpack.config.js lives
-        entry: './app.js',                                  //This can take multiple inputs in form of an array
+        entry: {
+            app: './app.js',
+            bundle: './styles/styles.scss',
+            download: './styles/download.scss'
+        },                                                  //This can take multiple inputs in form of an array
         output: {
             path: path.resolve(__dirname, './public'),      // __dirname refers to the directory where this webpack.config.js lives
             filename: 'app.bundle.js',
@@ -54,7 +58,7 @@ module.exports = function(params){
         },
         plugins: [
             new ExtractTextPlugin({
-              filename: 'app.bundle.css',
+              filename: 'app.[name].css',
               allChunks: true,
             }),
         ],

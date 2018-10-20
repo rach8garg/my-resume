@@ -1,3 +1,6 @@
+<%
+    const programming = ['JavaScript', 'Node JS', 'ECMA6', 'PHP'];
+%>
 <h2 class="section-header">
     <span class="heading">TOOLS & TECHNOLOGIES</span>
 </h2>
@@ -12,10 +15,9 @@
         <li>
             <strong>Programming</strong>
             <ol>
-                <li class="item">JavaScript</li>
-                <li class="item">Node JS</li>
-                <li class="item">ECMA6</li>
-                <li class="item">PHP</li>
+                <% for(var i=0; i < programming.length; i++) { %>
+                     <li class="item"><%= programming[i] %></li>
+                <% } %>
             </ol>
         </li>
         <li>

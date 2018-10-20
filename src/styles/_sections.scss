@@ -4,6 +4,7 @@
             margin: 10px 0 15px;
             overflow: hidden;
             min-height: 64px;
+            width: 100%;
             .org-img {
                 width: 60px;
                 height: 60px;
@@ -31,6 +32,7 @@
                 .position{
                     display:block;
                     margin-bottom: 5px;
+                    font-weight: 700;
                 }
                 .datetime{
                     font-size: .8725em;
@@ -73,6 +75,7 @@
         text-align: center;
         color: $color-white;
         overflow: hidden;
+        width: 99%;
         .skill-bar{
             height: 18px;
             line-height: 19px;
@@ -102,9 +105,10 @@
             padding: 0 0 0 20px;
         }
         strong{
-            width: 170px;
+            width: 165px;
             text-transform: capitalize;
             float: left;
+            font-weight: 700;
         }
         .item{
             display: inline-block;

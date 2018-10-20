@@ -1,7 +1,5 @@
 'use-strict';
 
-require("./styles/styles.scss");
-
     let rotation            = 0;
     const downloadKeyCode	= 18; //alt Key
     const PDF_LINK          = 'http://www.pixlboy.com./docs/rach8garg.pdf';
