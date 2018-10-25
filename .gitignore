@@ -4,4 +4,6 @@ npm-debug.log
 .classpath
 .project
 dist/
-.DS_Store
+*.DS_Store
+public/*.DS_Store
+src/*.DS_Store

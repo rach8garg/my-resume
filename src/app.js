@@ -37,6 +37,4 @@
         if ( event.which === downloadKeyCode) app.downloadPDF(event);
     });
 
-    let app = new App();
-
-    app.setDates('12-10-2018');
+    //let app = new App();

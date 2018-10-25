@@ -1,14 +1,17 @@
 .section-projects {
-    border-right: 1px solid $color-grey-4;
+    border-left: 4px solid $color-grey-3;
     .project-detail {
         padding: 20px 35px 14px;
         border-bottom: 1px solid $color-grey-2;
-        border-left: 4px solid $color-grey-3;
-
+        &:last-of-type{
+            border-bottom: 0;
+        }
         .summary {
+            overflow: hidden;
             .name {
                 margin: 5px 15px 5px 0;
-                color: $color-blue-2;                
+                color: $color-blue-2;
+                display: inline-block;
             }
 
             .client {
@@ -23,7 +26,7 @@
                     color: $color-blue-5;
                 }
                 .time{
-                    line-height: 25px;
+                    line-height: 28px;
                 }
                 height: 28px;
                 width: 90px;
@@ -50,7 +53,7 @@
         }
     }
     .bullet-list{
-        margin: 0 0 20px;
+        margin: 0 0 15px;
         .item{
             @extend .bullet;
         }

@@ -75,6 +75,7 @@
                         font-size: 0.8rem;
                         margin-top: 10px;
                         padding: 0 15px 0 15px;
+                        width: calc(50% - 12px);
                         &:after, &:before{
                             top: 7px;
                         }
@@ -118,15 +119,19 @@
         .project-detail{
             padding: 15px 20px 14px;
             .summary{
-                .name{
+                    position: relative;
+                    margin: 0 0 10px 0;
+                .name, .client{
                     float: none;
+                    display: block;
                 }
                 .client {
                     margin-top: 0;
                 }
                 .duration{
-                    position: relative;
-                    top: -25px;
+                    position: absolute;
+                    top: 8px;
+                    right: 0;
                 }
             }
             .description {

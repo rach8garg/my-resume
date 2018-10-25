@@ -1,21 +1,25 @@
 .left-section {
     color: $color-white;
     background: $color-grey-1;
-    .section-body{
+
+    .section-body {
         padding: 10px 20px;
+
         .list {
             li {
                 padding: 8px 5px;
                 overflow: hidden;
+
                 label {
-                    width:40px;
+                    width: 40px;
                     font-size: 1.5rem;
                 }
 
                 span {
                     font-size: 1rem;
                     line-height: 1.5rem;
-                    a{
+
+                    a {
                         text-decoration: none;
                         color: $color-white;
                     }
@@ -35,7 +39,7 @@
         }
 
         .profile-image {
-            transition: .7s;
+            transition: 0.7s;
             background: url("../images/profile-img-bw.jpg") no-repeat 0 0;
             background-size: 100%;
             width: 140px;
@@ -48,11 +52,13 @@
             right: 0;
             margin: auto;
             border: 3px solid $color-grey-1;
-            &:before{
+
+            &:before {
                 content: '';
                 background-image: url("../images/profile-img.jpg");
             }
-            &:hover{
+
+            &:hover {
                 background-image: url("../images/profile-img.jpg");
             }
         }
@@ -62,7 +68,8 @@
             margin: 90px 0 10px;
             text-align: center;
             color: $color-white;
-            &.letter{
+
+            &.letter {
                 margin: 30px 0 10px;
             }
         }
@@ -76,9 +83,9 @@
         }
     }
 
-    .intro{
+    .intro {
         font-size: 0.9rem;
-        padding: 0px 20px 20px;
+        padding: 0 20px 20px;
         font-family: inherit;
         line-height: 20px;
         text-align: justify;
@@ -88,14 +95,15 @@
         @extend .section-body;
         padding-right: 0;
 
-        .linker{
+        .linker {
             color: transparent !important;
             width: 250px;
             position: absolute;
             z-index: 1;
             overflow: hidden;
         }
-        .linker-text{
+
+        .linker-text {
             position: relative;
             color: $color-white;
             top: 2px;
@@ -105,55 +113,66 @@
 
     .personal-info {
         @extend .section-body;
-        padding:10px 0;
-        .list{
-            li{
-                padding:8px 15px;
-                &:nth-child(1){
+        padding: 10px 0;
+
+        .list {
+            li {
+                padding: 8px 15px;
+
+                &:nth-child(1) {
                     background: $color-grey-5;
                 }
-                &:nth-child(2){
+
+                &:nth-child(2) {
                     background: $color-grey-6;
                 }
-                &:nth-child(3){
+
+                &:nth-child(3) {
                     background: $color-grey-7;
                 }
-                &:nth-child(4){
+
+                &:nth-child(4) {
                     background: $color-grey-8;
                 }
-                span{
+
+                span {
                     line-height: 1.8rem;
                 }
             }
         }
     }
 
-    .interests-info{
+    .interests-info {
         @extend .section-body;
         padding-right: 0;
-        .list{
+
+        .list {
             width: 300px;
             margin: 25px auto 0;
             overflow: hidden;
             padding-left: 15px;
-            li{
+
+            li {
                 width: 80px;
                 height: 80px;
                 float: left;
                 text-align: center;
                 padding: 16px 0;
-                &:hover{
-                    .icons{
+
+                &:hover {
+                    .icons {
                         color: $color-blue-2;
                     }
                 }
-                .name{
+
+                .name {
                     display: block;
-                    font-size: .7rem;
+                    font-size: 0.7rem;
                     line-height: 20px;
                 }
-                .icons{
-                    transition: .7s;
+
+                .icons {
+                    transition: 0.7s;
                     font-size: 2rem;
                     display: block;
                     font-style: normal;
@@ -162,25 +181,28 @@
         }
     }
 
-    .section-header{
+    .section-header {
         font-size: 1.2rem;
-        margin: 15px 0px;
+        margin: 15px 0;
         color: $color-white;
         position: relative;
         font-weight: 500;
-        span{
+
+        span {
             background: $color-grey-1;
             z-index: 100;
             position: relative;
             padding-right: 10px;
         }
-        &::first-letter{
+
+        &::first-letter {
             font-size: 1.4em;
         }
-        &::after{
+
+        &::after {
             content: "";
             width: 180px;
-            border-top:1px solid $color-white;
+            border-top: 1px solid $color-white;
             font-size: 0;
             position: absolute;
             right: 0;
@@ -190,106 +212,111 @@
     }
 
     .anim-frame {
-    	background: linear-gradient($color-blue-7, $color-blue-8);
-    	position: relative;
-    	height: 135px;
-    	svg {
-    		max-width: 100%;
-    		height: auto;
-    		display: block;
-    	}
-    	.clouds {
-    		position: absolute;
-    		top: 0;
-    		left: 0;
-    		right: 0;
-    		bottom: 0;
-    		overflow: hidden;
-    	}
+        background: linear-gradient($color-blue-7, $color-blue-8);
+        position: relative;
+        height: 135px;
 
-    	.cloud {
-    		animation-name: cloud-movement;
-    		animation-timing-function: linear;
-    		animation-direction: forwards;
-    		animation-iteration-count: infinite;
-    		animation-duration: 12s;
-    		position: absolute;
-    		top: 0;
-    		width: 200px;
-    		right: 0;
-    		opacity: .5;
-    		&.small {
-    			margin: 0 200px 0 0;
-    			width: 150px;
-    		}
-    		&.smaller {
-    			margin: -10px 230px 0 0;
-    			width: 100px;
-    		}
-    		&.slow {
-    			animation-duration: 8s;
-    		}
-    		&.slower {
-    			animation-duration: 12s;
-    		}
-    	}
+        .clouds {
+            position: absolute;
+            width: 100%;
+            height: 135px;
+            overflow: hidden;
+        }
+
+        .cloud {
+            animation-name: cloud-movement;
+            animation-timing-function: linear;
+            animation-direction: forwards;
+            animation-iteration-count: infinite;
+            animation-duration: 12s;
+            position: absolute;
+            top: 0;
+            width: 200px;
+            right: 0;
+            opacity: 0.5;
+
+            &.small {
+                margin: 0 60px 0 0;
+                width: 150px;
+                height: auto;
+            }
+
+            &.smaller {
+                margin: 0 230px 0 0;
+                width: 100px;
+                height: auto;
+            }
+
+            &.slow {
+                animation-duration: 8s;
+            }
+
+            &.slower {
+                animation-duration: 12s;
+            }
+        }
     }
+
     .windmill {
-    	height: 135px;
-    	margin: 0 auto;
-    	position: absolute;
-    	width: 100%;
-    	z-index: 100;
+        height: 135px;
+        margin: 0 auto;
+        position: absolute;
+        width: 100%;
+        z-index: 100;
 
-    	.windmill-base {
-    		border-bottom: 10px solid $color-grey-1;
-    		border-left: 5px solid transparent;
-    		border-right: 5px solid transparent;
-    		height: 0;
-    		width: 20px;
-    		left: 40px;
-    		bottom: -2px;
-    		border-bottom-left-radius: 2px;
-    		border-bottom-right-radius: 2px;
-    		position: absolute;
-    	}
+        .windmill-base {
+            border-bottom: 10px solid $color-grey-1;
+            border-left: 5px solid transparent;
+            border-right: 5px solid transparent;
+            height: 0;
+            width: 20px;
+            left: 40px;
+            bottom: -2px;
+            border-bottom-left-radius: 2px;
+            border-bottom-right-radius: 2px;
+            position: absolute;
+        }
 
-    	.windmill-body {
-    		z-index: 0;
-    		width: 8px;
-    		height: 65px;
-    		background: $color-grey-1;
-    		border-radius: 5px / 70px;
-    		border-bottom-left-radius: 5px;
-    		border-bottom-right-radius: 5px;
-    		left: 46px;
-    		bottom: 0;
-    		position: absolute;
-    	}
+        .windmill-body {
+            z-index: 0;
+            width: 8px;
+            height: 65px;
+            background: $color-grey-1;
+            border-radius: 5px / 70px;
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+            left: 46px;
+            bottom: 0;
+            position: absolute;
+        }
 
-    	.windmill-wings {
-    		width: 5px;
-    		height: 75px;
-    		background: $color-grey-1;
-    		border-radius: 4px / 60px;
-    		left: 47px;
-    		top: 34px;
-    		position: absolute;
-    		&.wing1{
-    			transform: rotate(30deg);
+        .windmill-wings {
+            width: 5px;
+            height: 75px;
+            background: $color-grey-1;
+            border-radius: 4px / 60px;
+            left: 47px;
+            top: 34px;
+            position: absolute;
+
+            &.wing1 {
+                transform: rotate(30deg);
                 -webkit-transform: rotate(30deg);
-    			animation-name: rotate1;
-    		}
-    		&.wing2{
-    			transform: rotate(120deg);
+                animation-name: rotate1;
+            }
+
+            &.wing2 {
+                transform: rotate(120deg);
                 -webkit-transform: rotate(120deg);
-    			animation-name: rotate2;
-    		}
-    		&.wing1, &.wing2{
-    			animation-timing-function: linear;
-    			animation-iteration-count: infinite;
-    			animation-duration: 5s;
-    		}
-    	}
+                animation-name: rotate2;
+            }
+
+            &.wing1,
+            &.wing2 {
+                animation-timing-function: linear;
+                animation-iteration-count: infinite;
+                animation-duration: 5s;
+            }
+        }
     }
 }
