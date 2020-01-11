@@ -15,10 +15,8 @@
             height: $body-height;
         }
         .page-back, .page-front {
+            margin: 10px 0;
             background: $color-white;
-        }
-        .page-front{
-            margin: 0 0 10px 0;
             box-shadow: 2px 2px 1px 1px $color-grey-2;
         }
     }

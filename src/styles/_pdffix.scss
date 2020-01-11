@@ -1,6 +1,7 @@
 /*--------------------- PDF fixes -------------------------------*/
 
 .wrapper {
+    width: $width-wrapper;
     .main-content {
         .page-back, .page-front {
             margin: 0;
@@ -35,19 +36,10 @@
             padding-top: 0;
         }
     }
-    .pdf-fix-1{
-        width: 137px;
-    }
-    .pdf-fix-2{
-        width: 178px;
-    }
-    .pdf-fix-3{
-        width: 115px;
-    }
-    .pdf-fix-4{
-        width: 144px;
-    }
-    .pdf-fix-5{
-        width: 100px;
+    .fox-link{
+        display: inline-block;
+        width: 190px;
+        position: relative;
+        z-index: 1;
     }
 }
