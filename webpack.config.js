@@ -5,7 +5,7 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = function(params){
     var webpackConfig = {
-        context: path.resolve( __dirname, './src'),         // __dirname refers to the directory where this webpack.config.js lives
+        context: path.resolve(__dirname, './src'),         // __dirname refers to the directory where this webpack.config.js lives
         entry: {
             app: './app.js',
             bundle: './styles/styles.scss',
@@ -38,8 +38,12 @@ module.exports = function(params){
                     test: /\.scss$/,
                     exclude: [/node_modules/],
                     use: ExtractTextPlugin.extract({
-                        use: [ 'css-loader?sourceMap', 'sass-loader?sourceMap' ],
+                        use: [ 
+                           { loader: 'css-loader?sourceMap', options: { minimize: true } },
+                           { loader: 'sass-loader?sourceMap' }
+                        ],
                         fallback: 'style-loader',
+                        
                     })
                 },
                 {

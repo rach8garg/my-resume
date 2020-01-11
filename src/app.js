@@ -2,7 +2,7 @@
 
     let rotation            = 0;
     const downloadKeyCode	= 18; //alt Key
-    const PDF_LINK          = 'http://www.pixlboy.com./docs/rach8garg.pdf';
+    const PDF_LINK          = 'http://www.pixlboy.com./docs/rachit-garg-ui.pdf';
 
     class App {
 
@@ -32,9 +32,9 @@
     //     }
     //     document.querySelector(".flipper").style.transform = `rotateY(${rotation}deg)`;
     // });
+    let app = new App();
 
     document.addEventListener("keyup", (event) => {
         if ( event.which === downloadKeyCode) app.downloadPDF(event);
     });
 
-    //let app = new App();

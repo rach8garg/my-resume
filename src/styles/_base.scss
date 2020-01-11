@@ -8,44 +8,18 @@
             height: $body-height;
         }
         .right-section {
-            width: $width-right;
+            width: calc(100% - #{$width-left});
             height: $body-height;
         }
         .section-projects {
             height: $body-height;
         }
         .page-back, .page-front {
-            margin: 10px 0;
             background: $color-white;
+        }
+        .page-front{
+            margin: 0 0 10px 0;
             box-shadow: 2px 2px 1px 1px $color-grey-2;
         }
-    }
-    &.flip-container {
-    	// -webkit-perspective: $width-wrapper;
-    	// perspective: $width-wrapper;
-    	width: $width-wrapper;
-    	.flipper {
-    		transition: 1s;
-    		transform-style: preserve-3d;
-    		position: relative;
-    	}
-    	// .page-back,
-    	// .page-front {
-    	// 	width: $width-wrapper;
-    	// 	-webkit-backface-visibility: hidden;
-    	// 	backface-visibility: hidden;
-    	// 	position: absolute;
-    	// 	top: 0;
-    	// 	left: 0;
-    	// 	background: $color-white;
-    	// 	height: $page-height;
-    	// }
-    	// .page-front {
-    	// 	transform: rotateY(0deg);
-    	// }
-        //
-    	// .page-back {
-    	// 	transform: rotateY(-180deg);
-    	// }
     }
 }

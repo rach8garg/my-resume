@@ -1,5 +1,15 @@
 <%
-    const programming = ['JavaScript (v5, v6)', 'TypeScript', 'Node JS'];
+    const skills = {
+        programming : ['JavaScript', 'TypeScript', 'Node JS'],
+        frameworks : ['React JS', 'Angular (v1, v2+)', 'jQuery', 'Lodash', 'RxJs' ],
+        templating : ['HTML5', 'EJS', 'Handlebars', 'Bootstrap', 'Foundation'],
+        design: ['CSS','SASS','Photoshop','Lightroom','SVG'],
+        build: ['Docker','Gulp','Webpack','Jenkins','Grunt'],
+        testing: ['Jasmine', 'Karma'],
+        patterns: ['OOJS', 'MVC', 'REST', 'MVVM'],
+        package: ['Bower','NPM','Homebrew'],
+        versioning: ['Git', 'SVN']
+    }
 %>
 <h2 class="section-header">
     <span class="heading">TOOLS & TECHNOLOGIES</span>
@@ -15,92 +25,79 @@
         <li>
             <strong>Programming</strong>
             <ol>
-                <% for(var i=0; i < programming.length; i++) { %>
-                     <li class="item"><%= programming[i] %></li>
-                <% } %>
+                <% skills.programming.forEach((item) => { %>
+                    <li class="item"><%= item %></li>
+                <% }) %>
             </ol>
         </li>
         <li>
             <strong>Frameworks & libraries</strong>
             <ol>
-                <li class="item">React JS</li>
-                <li class="item">Angular (v1, v2+)</li>
-                <li class="item">jQuery</li>
-                <li class="item">Lodash</li>
-                <li class="item">Require</li>
-                <li class="item">Knockout</li>
+                <% skills.frameworks.forEach((item) => { %>
+                    <li class="item"><%= item %></li>
+                <% }) %>
             </ol>
         </li>
         <li>
             <strong>Templating</strong>
             <ol>
-                <li class="item">HTML5</li>
-                <li class="item">EJS</li>
-                <li class="item">Handlebars</li>
-                <li class="item">Bootstrap</li>
-                <li class="item">Foundation</li>
+                <% skills.templating.forEach((item) => { %>
+                    <li class="item"><%= item %></li>
+                <% }) %>
             </ol>
         </li>
         <li>
             <strong>Design</strong>
             <ol>
-                <li class="item">CSS</li>
-                <li class="item">SASS</li>
-                <li class="item">Compass</li>
-                <li class="item">Photoshop</li>
-                <li class="item">Lightroom</li>
-                <li class="item">SVG</li>
+                <% skills.design.forEach((item) => { %>
+                    <li class="item"><%= item %></li>
+                <% }) %>
             </ol>
         </li>
         <li>
             <strong>Build &amp; Deploy</strong>
             <ol>
-                <li class="item">Docker</li>
-                <li class="item">Webpack</li>
-                <li class="item">Gulp</li>
-                <li class="item">Grunt</li>
-                <li class="item">Jenkins</li>
+                <% skills.build.forEach((item) => { %>
+                    <li class="item"><%= item %></li>
+                <% }) %>
             </ol>
         </li>
 
         <li>
             <strong>Unit Testing</strong>
             <ol>
-                <li class="item">Jasmine</li>
-                <li class="item">Karma</li>
+                <% skills.testing.forEach((item) => { %>
+                    <li class="item"><%= item %></li>
+                <% }) %>
             </ol>
         </li>
         <li>
             <strong>Design patterns</strong>
             <ol>
-                <li class="item">OOJS</li>
-                <li class="item">MVC</li>
-                <li class="item">REST</li>
-                <li class="item">MVVM</li>
+                <% skills.patterns.forEach((item) => { %>
+                    <li class="item"><%= item %></li>
+                <% }) %>
             </ol>
         </li>
         <li>
             <strong>Package managers</strong>
             <ol>
-                <li class="item">Bower</li>
-                <li class="item">NPM</li>
-                <li class="item">Homebrew</li>
+                <% skills.package.forEach((item) => { %>
+                    <li class="item"><%= item %></li>
+                <% }) %>
             </ol>
         </li>
         <li>
             <strong>Version control</strong>
             <ol>
-                <li class="item">Git</li>
-                <li class="item">SVN</li>
-            </ol>
-        </li>
-        <li>
-            <strong>Future interest areas</strong>
-            <ol>
-                <li class="item pdf-fix-1">Python</li>
-                <li class="item pdf-fix-2">Full Stack Development</li>
-                <li class="item">Google Go</li>
+                <% skills.versioning.forEach((item) => { %>
+                    <li class="item"><%= item %></li>
+                <% }) %>
+
             </ol>
         </li>
     </ul>
+    <div>
+        I hold no bias towards any contemporary technology or framework. Would ❤️ to get my hands dirty on Python, Go, Rust or anything similar if given an opportunity. 
+    </div>
 </div>

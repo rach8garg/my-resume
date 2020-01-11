@@ -1,43 +1,24 @@
 /*==========================Media Queries=====================*/
 
 @media screen and (max-width: $break-medium) {
+    html {
+        font-size: 15px;
+    }
     .wrapper{
         height:auto;
         width: 100%;
-        &.flip-container{
-            width: 100%;
-            height:auto;
-            .page-front, .page-back{
-                width: 100%;
-                height:auto;
-                margin: 0 0 10px 0;
-            }
-        }
     }
 }
 
 @media screen and (max-width: $break-small) {
     html {
         font-size: 14px;
-        background: $color-white;
     }
     .wrapper{
         .main-content{
             .left-section, .right-section, .section-projects{
                 width: 100%;
                 height:auto;
-            }
-        }
-        &.flip-container{
-            width: 100%;
-            height:auto;
-            .page-front, .page-back{
-                width: 100%;
-                height:auto;
-                margin: 0 0 10px 0;
-            }
-            .page-back{
-                margin: 0;
             }
         }
     }
@@ -61,24 +42,29 @@
     }
 
     .right-section{
+        .section-header {
+            font-size: 0.7em;
+            height: 30px;
+            margin:10px auto 0;
+            .heading{
+                margin-left: 15px;
+            }
+            &:after{
+                left:15px;
+                width:300px;
+            }
+        }
         .section-experience-education{
             .org-list{
                 .org{
+                    h6{
+                        font-size: 1rem;
+                    }
                     .org-img{
                         display: none;
                     }
                     .summary{
-                        margin-right: 5px;
-                    }
-                    .highlights{
-                        float: right;
-                        font-size: 0.8rem;
-                        margin-top: 10px;
-                        padding: 0 15px 0 15px;
-                        width: calc(50% - 12px);
-                        &:after, &:before{
-                            top: 7px;
-                        }
+                        width: 100%;
                     }
                 }
             }
@@ -94,25 +80,7 @@
             }
         }
         .section-content{
-            padding: 10px 15px 0;
-        }
-        .content-box{
-            padding-top:10px;
-            &.section-achievements{
-                padding-bottom: 10px;
-            }
-        }
-        .section-header{
-            font-size: 0.7em;
-            height: 30px;
-            margin:10px auto 0;
-            span{
-                margin-left: 15px;
-            }
-            &:after{
-                left:15px;
-                width:300px;
-            }
+            padding: 10px 15px;
         }
     }
     .section-projects {
@@ -165,7 +133,7 @@
         }
     }
     .app-footer{
-        height: 90px;
+        height: 80px;
         .updated{
             margin:0;
             width: 100%;
@@ -176,11 +144,8 @@
             width: 100%;
             margin: 0;
             .hashtag{
-                margin: 0 5px;
+                margin: 0 3px;
             }
-        }
-        .flip-btn{
-            width: 100%;
         }
     }
 }
