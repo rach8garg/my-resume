@@ -8,8 +8,9 @@ module.exports = function(params){
         context: path.resolve(__dirname, './src'),         // __dirname refers to the directory where this webpack.config.js lives
         entry: {
             app: './app.js',
-            bundle: './styles/styles.scss',
-            download: './styles/download.scss'
+            bundle: './styles/page-styles.scss',
+            download: './styles/page-download.scss',
+            cover: './styles/page-cover.scss'
         },                                                  //This can take multiple inputs in form of an array
         output: {
             path: path.resolve(__dirname, './public'),      // __dirname refers to the directory where this webpack.config.js lives
@@ -63,7 +64,7 @@ module.exports = function(params){
         plugins: [
             new ExtractTextPlugin({
               filename: 'app.[name].css',
-              allChunks: true,
+              allChunks: true
             }),
         ],
         resolve: {
