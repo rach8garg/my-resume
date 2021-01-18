@@ -2,7 +2,7 @@
     .section-header {
         color: $color-grey-3;
         font-size: 1em;
-        margin: 10px auto;
+        margin: 30px auto 10px;
         height: 40px;
         letter-spacing: 2px;
         width: 70%;
@@ -25,7 +25,7 @@
         &::after {
             content: "";
             border: 1px solid $color-grey-1;
-            width: 60%;
+            width: 75%;
             font-size: 0;
             position: absolute;
             right: 0;

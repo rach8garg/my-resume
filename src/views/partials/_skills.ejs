@@ -1,14 +1,12 @@
 <%
     const skills = {
-        programming : ['JavaScript', 'TypeScript', 'Node JS'],
-        frameworks : ['React JS', 'Angular (v1, v2+)', 'jQuery', 'Lodash', 'RxJs' ],
-        templating : ['HTML5', 'EJS', 'Handlebars', 'Bootstrap', 'Foundation'],
-        design: ['CSS','SASS','Photoshop','Lightroom','SVG'],
-        build: ['Docker','Gulp','Webpack','Jenkins','Grunt'],
-        testing: ['Jasmine', 'Karma'],
-        patterns: ['OOJS', 'MVC', 'REST', 'MVVM'],
-        package: ['Bower','NPM','Homebrew'],
-        versioning: ['Git', 'SVN']
+        programming : ['JavaScript', 'ES6', 'TypeScript', 'Node JS'],
+        frameworks : ['React', 'Redux', 'Angular v2+', 'RxJs', 'Express', 'Kendo'],
+        design : ['HTML5', 'CSS3', 'SASS', 'EJS', 'Bootstrap', 'Material UI'],
+        services: ['Firebase', 'AWS', 'Git', 'Jenkins', 'Bamboo'],
+        build: ['Docker','Gulp','Webpack','Grunt'],
+        testing: ['Jasmine', 'Karma', 'Jest'],
+        patterns: ['Object Oriented', 'MVC', 'REST', 'Progressive Web Apps'],
     }
 %>
 <h2 class="section-header">
@@ -31,7 +29,7 @@
             </ol>
         </li>
         <li>
-            <strong>Frameworks & libraries</strong>
+            <strong>Frameworks &amp; Libraries</strong>
             <ol>
                 <% skills.frameworks.forEach((item) => { %>
                     <li class="item"><%= item %></li>
@@ -39,17 +37,17 @@
             </ol>
         </li>
         <li>
-            <strong>Templating</strong>
+            <strong>Template &amp; Styling</strong>
             <ol>
-                <% skills.templating.forEach((item) => { %>
+                <% skills.design.forEach((item) => { %>
                     <li class="item"><%= item %></li>
                 <% }) %>
             </ol>
         </li>
         <li>
-            <strong>Design</strong>
+            <strong>Services</strong>
             <ol>
-                <% skills.design.forEach((item) => { %>
+                <% skills.services.forEach((item) => { %>
                     <li class="item"><%= item %></li>
                 <% }) %>
             </ol>
@@ -62,9 +60,8 @@
                 <% }) %>
             </ol>
         </li>
-
         <li>
-            <strong>Unit Testing</strong>
+            <strong>Testing</strong>
             <ol>
                 <% skills.testing.forEach((item) => { %>
                     <li class="item"><%= item %></li>
@@ -72,32 +69,12 @@
             </ol>
         </li>
         <li>
-            <strong>Design patterns</strong>
+            <strong>Others</strong>
             <ol>
                 <% skills.patterns.forEach((item) => { %>
                     <li class="item"><%= item %></li>
                 <% }) %>
             </ol>
         </li>
-        <li>
-            <strong>Package managers</strong>
-            <ol>
-                <% skills.package.forEach((item) => { %>
-                    <li class="item"><%= item %></li>
-                <% }) %>
-            </ol>
-        </li>
-        <li>
-            <strong>Version control</strong>
-            <ol>
-                <% skills.versioning.forEach((item) => { %>
-                    <li class="item"><%= item %></li>
-                <% }) %>
-
-            </ol>
-        </li>
     </ul>
-    <div>
-        I hold no bias towards any contemporary technology or framework. Would ❤️ to get my hands dirty on Python, Go, Rust or anything similar if given an opportunity. 
-    </div>
 </div>

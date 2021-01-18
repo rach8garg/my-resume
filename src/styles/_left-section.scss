@@ -3,7 +3,7 @@
     background: $color-grey-1;
 
     .section-body {
-        padding: 10px 20px;
+        padding: 30px 20px;
 
         .list {
             li {
@@ -33,7 +33,7 @@
         padding: 0 0 10px;
 
         .cover-image {
-            height: 314px;
+            height: 415px;
             background: url("../images/profile-img-bw.jpg") no-repeat 0 0;
             background-size: 100%;
         }
@@ -201,8 +201,8 @@
 
         &::after {
             content: "";
-            width: 180px;
-            border-top: 1px solid $color-white;
+            width: 300px;
+            border-top: 1px solid $color-grey-8;
             font-size: 0;
             position: absolute;
             right: 0;

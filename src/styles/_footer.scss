@@ -5,13 +5,15 @@
     color: $color-white;
     z-index: 100;
     position: relative;
-    .updated, .hashtags{
+    .updated{
         line-height: 40px;
-        height: 40px;
-        margin: 0 70px;
-        display: inline-block;
+        text-align: center;
+        width: $width-left;
     }
     .hashtags{
+        line-height: 40px;
+        margin: 0 70px;
+        display: inline-block;
         .hashtag{
             color: $color-blue-3;
             font-size: .8rem;

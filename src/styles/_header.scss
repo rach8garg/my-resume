@@ -1,17 +1,20 @@
 .app-header {
     height: $header-footer-height;
-    width: 100%;
     background: $color-grey-3;
     color: $color-white;
     .tab{
         border-bottom: 4px solid $color-blue-3;
         text-transform: uppercase;
-        left: 42%;
-        position: relative;
         height: 40px;
-        display: inline-block;
         line-height: 50px;
         font-size: 1.1rem;
+        margin: auto;
+        display: block;
+        width: 80px;
+        text-align: center;
+        &.cover{
+            width: 140px;
+        }
     }
     .flip-btn{
         @extend .flip-btn;
