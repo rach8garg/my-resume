@@ -5,8 +5,8 @@
     .tab{
         border-bottom: 4px solid $color-blue-3;
         text-transform: uppercase;
-        height: 40px;
-        line-height: 50px;
+        height: $header-footer-height;
+        line-height: 58px;
         font-size: 1.1rem;
         margin: auto;
         display: block;
