@@ -3,7 +3,7 @@
     background: $color-grey-1;
 
     .section-body {
-        padding: 30px 20px;
+        padding: 20px;
 
         .list {
             li {
@@ -93,7 +93,6 @@
 
     .contact-info {
         @extend .section-body;
-        padding-right: 0;
 
         .linker {
             color: transparent !important;
@@ -144,20 +143,17 @@
 
     .interests-info {
         @extend .section-body;
-        padding-right: 0;
 
         .list {
-            width: 300px;
+            width: 100%;
             margin: 25px auto 0;
             overflow: hidden;
-            padding-left: 15px;
 
             li {
-                width: 80px;
-                height: 80px;
+                width: 33%;
                 float: left;
                 text-align: center;
-                padding: 16px 0;
+                padding: 1rem 0;
 
                 &:hover {
                     .icons {

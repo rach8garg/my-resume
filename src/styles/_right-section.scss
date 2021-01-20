@@ -24,12 +24,12 @@
 
         &::after {
             content: "";
-            border: 1px solid $color-grey-1;
+            border-top: 2px solid $color-grey-1;
             width: 75%;
             font-size: 0;
             position: absolute;
             right: 0;
-            top: 24px;
+            top: 26px;
             z-index: 0;
         }
     }
