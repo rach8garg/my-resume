@@ -7,6 +7,8 @@
     "start": "node server.js",
     "dev": "webpack -d",
     "prod": "webpack -p",
+    "print:resume": "cd wkhtmltopdf/bin && wkhtmltopdf --margin-left 0 --margin-right 0 --margin-top 0 --margin-bottom 0 http://localhost:8888/download rachit-garg-resume.pdf",
+    "print:cover": "cd wkhtmltopdf/bin && wkhtmltopdf --margin-left 0 --margin-right 0 --margin-top 0 --margin-bottom 0 http://localhost:8888/cover rachit-garg-cover.pdf",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "engines": {
